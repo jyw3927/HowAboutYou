@@ -39,7 +39,7 @@ struct ContentView: View {
                 }
                 .tag(0)
             
-            SettingTabView(title: "마이페이지")
+            MypageTabView(title: "마이페이지")
                 .tabItem {
                     Image(systemName: "person.circle")
                     Text("마이페이지")

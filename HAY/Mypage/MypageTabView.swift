@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SettingTabView: View {
+struct MypageTabView: View {
     
     var title: String
     
