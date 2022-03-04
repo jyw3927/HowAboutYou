@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5206909627CE48FD0057D109 /* HAYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206909527CE48FD0057D109 /* HAYApp.swift */; };
-		5206909827CE48FD0057D109 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206909727CE48FD0057D109 /* ContentView.swift */; };
 		5206909A27CE49000057D109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206909927CE49000057D109 /* Assets.xcassets */; };
 		5206909D27CE49000057D109 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206909C27CE49000057D109 /* Preview Assets.xcassets */; };
 		520690A827CE49000057D109 /* HAYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520690A727CE49000057D109 /* HAYTests.swift */; };
 		520690B327CE49000057D109 /* HAYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520690B227CE49000057D109 /* HAYUITests.swift */; };
+		525BCA1A27D2054E006C151A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCA1927D2054E006C151A /* ContentView.swift */; };
 		52EA013627CE55A200294C48 /* ConversationTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA013527CE55A200294C48 /* ConversationTabView.swift */; };
 		52EA013E27CE55D100294C48 /* GameTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA013D27CE55D100294C48 /* GameTabView.swift */; };
 		52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014227CE55FB00294C48 /* GameTabCard.swift */; };
@@ -41,7 +41,6 @@
 /* Begin PBXFileReference section */
 		5206909227CE48FD0057D109 /* HAY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5206909527CE48FD0057D109 /* HAYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAYApp.swift; sourceTree = "<group>"; };
-		5206909727CE48FD0057D109 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5206909927CE49000057D109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5206909C27CE49000057D109 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5206909E27CE49000057D109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		520690AE27CE49000057D109 /* HAYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HAYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		520690B227CE49000057D109 /* HAYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAYUITests.swift; sourceTree = "<group>"; };
 		520690B427CE49000057D109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525BCA1927D2054E006C151A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52EA013527CE55A200294C48 /* ConversationTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTabView.swift; sourceTree = "<group>"; };
 		52EA013D27CE55D100294C48 /* GameTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabView.swift; sourceTree = "<group>"; };
 		52EA014227CE55FB00294C48 /* GameTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabCard.swift; sourceTree = "<group>"; };
@@ -113,10 +113,10 @@
 				52EA013127CE554000294C48 /* Test */,
 				52EA013027CE551E00294C48 /* fonts */,
 				5206909527CE48FD0057D109 /* HAYApp.swift */,
-				5206909727CE48FD0057D109 /* ContentView.swift */,
 				5206909927CE49000057D109 /* Assets.xcassets */,
 				5206909E27CE49000057D109 /* Info.plist */,
 				5206909B27CE49000057D109 /* Preview Content */,
+				525BCA1927D2054E006C151A /* ContentView.swift */,
 			);
 			path = HAY;
 			sourceTree = "<group>";
@@ -318,8 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EA013E27CE55D100294C48 /* GameTabView.swift in Sources */,
-				5206909827CE48FD0057D109 /* ContentView.swift in Sources */,
 				5206909627CE48FD0057D109 /* HAYApp.swift in Sources */,
+				525BCA1A27D2054E006C151A /* ContentView.swift in Sources */,
 				52EA014827CE561900294C48 /* BalanceView.swift in Sources */,
 				52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */,
 				52EA013627CE55A200294C48 /* ConversationTabView.swift in Sources */,
