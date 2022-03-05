@@ -86,9 +86,8 @@ struct BalanceView: View {
                 } // VStack
                 
             } // ZStack
-            
-            .navigationBarTitle(title, displayMode: .inline)
-//            .navigationTitle(title)
+            .navigationTitle(title)
+            .navigationBarHidden(true)
 //            .navigationBarTitleDisplayMode(.inline)
         } // NavigationView
         
