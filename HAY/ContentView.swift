@@ -11,45 +11,49 @@ import SwiftUI
 struct ContentView: View {
     
     init() {
+        UITabBar.appearance().barTintColor = UIColor(Color("PrimaryColor"))
         UITabBar.appearance().backgroundColor = UIColor(Color("PrimaryColor"))
         
         UITabBar.appearance().unselectedItemTintColor = UIColor(Color("DisabledColor"))
     }
     
     var body: some View {
-//        NavigationView {
+        
+        NavigationView {
+            
             TabView {
                 ConversationTabView(title: "대화")
                     .tabItem {
-                        Image(systemName: "message")
+                        Image("conversation")
                         Text("대화")
                     }
                     .tag(0)
                 
                 GameTabView(title: "게임")        .tabItem {
-                        Image(systemName: "die.face.5")
+                        Image("game")
                         Text("게임")
                     }
                     .tag(0)
                 
                 TestTabView(title: "심리테스트")
                     .tabItem {
-                        Image(systemName: "doc.on.clipboard")
+                        Image("test")
                         Text("심리테스트")
                     }
                     .tag(0)
                 
                 MypageTabView(title: "마이페이지")
                     .tabItem {
-                        Image(systemName: "person.circle")
+                        Image("mypage")
                         Text("마이페이지")
                     }
                     .tag(0)
             } // TabView
             .accentColor(Color("EnabledColor"))
-//            .navigationTitle("")
-//            .navigationBarHidden(true)
-//        }
+            .navigationTitle("")
+            .navigationBarHidden(true)
+            
+        } // NavigationView
     }
 }
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GameTabCard: View {
     
-//    var image: String
+    var imageURL: String
     var gameName: String
     
     var body: some View {
@@ -17,7 +17,7 @@ struct GameTabCard: View {
         VStack(alignment: .leading) {
             
             ZStack(alignment: .bottomLeading) {
-                Image("Game").resizable().aspectRatio(contentMode: .fill).frame(width: 360, height: 130).clipped()
+                Image(imageURL).resizable().aspectRatio(contentMode: .fill).frame(width: 360, height: 130).clipped()
                 Rectangle().frame(width: 360, height: 45).foregroundColor(Color("CardBarColor"))
                 Text(gameName)
                     .font(.system(size: 22, weight: .bold))

@@ -30,6 +30,8 @@ struct ConversationTabView: View {
             } // VStack
             
         } // ZStack
+        .navigationTitle("")
+        .navigationBarHidden(true)
         
     }
 }

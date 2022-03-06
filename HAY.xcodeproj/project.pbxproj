@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5204844E27D47E1300BBECF9 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204844D27D47E1300BBECF9 /* GameModel.swift */; };
 		5206909627CE48FD0057D109 /* HAYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206909527CE48FD0057D109 /* HAYApp.swift */; };
 		5206909A27CE49000057D109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206909927CE49000057D109 /* Assets.xcassets */; };
 		5206909D27CE49000057D109 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206909C27CE49000057D109 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5204844D27D47E1300BBECF9 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		5206909227CE48FD0057D109 /* HAY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5206909527CE48FD0057D109 /* HAYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAYApp.swift; sourceTree = "<group>"; };
 		5206909927CE49000057D109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				52EA013D27CE55D100294C48 /* GameTabView.swift */,
 				52EA014227CE55FB00294C48 /* GameTabCard.swift */,
 				52EA014727CE561900294C48 /* BalanceView.swift */,
+				5204844D27D47E1300BBECF9 /* GameModel.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			files = (
 				52EA013E27CE55D100294C48 /* GameTabView.swift in Sources */,
 				5206909627CE48FD0057D109 /* HAYApp.swift in Sources */,
+				5204844E27D47E1300BBECF9 /* GameModel.swift in Sources */,
 				525BCA1A27D2054E006C151A /* ContentView.swift in Sources */,
 				52EA014827CE561900294C48 /* BalanceView.swift in Sources */,
 				52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */,

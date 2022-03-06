@@ -30,6 +30,8 @@ struct TestTabView: View {
             } // VStack
             
         } // ZStack
+        .navigationTitle("")
+        .navigationBarHidden(true)
         
     }
 }

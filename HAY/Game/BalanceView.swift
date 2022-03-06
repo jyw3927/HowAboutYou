@@ -8,25 +8,30 @@
 import SwiftUI
 
 struct BalanceView: View {
-    
+    @Environment(\.presentationMode) var presentationMode
     var title: String
     
     @State
     private var isFirstItemTapped: Bool = false
     @State
     private var isSecondItemTapped: Bool = false
-    
+
     var body: some View {
-        
-        NavigationView {
             
-            ZStack {
+            ZStack (alignment: .topLeading) {
                 
                 LinearGradient(gradient: Gradient(colors: [Color("PrimaryColor"), Color("SubPrimaryColor")]),
                                 startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
                 
                 VStack {
+                    
+                    Text(title)
+                        .foregroundColor(Color("EnabledColor"))
+                        .fontWeight(.bold)
+                        .padding(.vertical, 15.0)
+                    
+                    Spacer()
                     
                     ZStack {
                         Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isFirstItemTapped ? Color("SecondaryColor") : Color("EnabledColor"))
@@ -81,15 +86,23 @@ struct BalanceView: View {
                         .cornerRadius(20)
                         
                         Text("저장하기").font(.system(size: 22)).fontWeight(.bold)
-                    }.padding(.top, 20)
+                    }.padding(.vertical, 30)
                     
                 } // VStack
+                
+                Button(action: {
+                           presentationMode.wrappedValue.dismiss()
+                       }, label: {
+                           Image(systemName: "chevron.left")
+                               .imageScale(.large)
+                               .padding()
+                       })
+                       .accentColor(Color("EnabledColor"))
                 
             } // ZStack
             .navigationTitle(title)
             .navigationBarHidden(true)
 //            .navigationBarTitleDisplayMode(.inline)
-        } // NavigationView
         
     }
 }
