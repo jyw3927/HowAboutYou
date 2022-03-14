@@ -160,6 +160,11 @@
 		52A9C02A27DF42B00053893E /* GameView */ = {
 			isa = PBXGroup;
 			children = (
+				52EA014727CE561900294C48 /* BalanceView.swift */,
+				52A9C02027DF3DF40053893E /* CommonView.swift */,
+				52A9C02527DF41E90053893E /* OXView.swift */,
+				52A9C02B27DF433D0053893E /* UnanimouslyView.swift */,
+				52A9C03327DF439F0053893E /* ConsonantView.swift */,
 			);
 			path = GameView;
 			sourceTree = "<group>";
@@ -193,12 +198,7 @@
 				52A9C02A27DF42B00053893E /* GameView */,
 				52EA013D27CE55D100294C48 /* GameTabView.swift */,
 				52EA014227CE55FB00294C48 /* GameTabCard.swift */,
-				52EA014727CE561900294C48 /* BalanceView.swift */,
 				5204844D27D47E1300BBECF9 /* GameModel.swift */,
-				52A9C02027DF3DF40053893E /* CommonView.swift */,
-				52A9C02527DF41E90053893E /* OXView.swift */,
-				52A9C02B27DF433D0053893E /* UnanimouslyView.swift */,
-				52A9C03327DF439F0053893E /* ConsonantView.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";

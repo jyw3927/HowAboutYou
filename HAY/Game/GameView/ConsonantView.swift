@@ -99,6 +99,6 @@ struct ConsonantView: View {
 
 struct Previews_ConsonantView_Previews: PreviewProvider {
     static var previews: some View {
-        ConsonantView(title: "초성퀴즈")
+        ConsonantView(title: "초성게임")
     }
 }

@@ -67,7 +67,7 @@ struct GameTabView: View {
                             GameTabCard(imageURL: "game4", gameName: "상식퀴즈").padding([.top, .leading, .trailing], 15)
                         })
 
-                        NavigationLink(destination: ConsonantView(title: "초성퀴즈"), label: {
+                        NavigationLink(destination: ConsonantView(title: "초성게임"), label: {
                             GameTabCard(imageURL: "game5", gameName: "초성퀴즈").padding(15)
                         })
                     }
