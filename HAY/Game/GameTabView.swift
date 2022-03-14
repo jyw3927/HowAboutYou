@@ -55,20 +55,20 @@ struct GameTabView: View {
                             GameTabCard(imageURL: "game1", gameName: "밸런스게임").padding([.top, .leading, .trailing], 15)
                         })
 
-                        NavigationLink(destination: BalanceView(title: "이구동성"), label: {
+                        NavigationLink(destination: UnanimouslyView(title: "이구동성"), label: {
                             GameTabCard(imageURL: "game2", gameName: "이구동성").padding([.top, .leading, .trailing], 15)
                         })
 
-                        NavigationLink(destination: BalanceView(title: "O/X 퀴즈"), label: {
+                        NavigationLink(destination: OXView(title: "O/X 퀴즈"), label: {
                             GameTabCard(imageURL: "game3", gameName: "O/X 퀴즈").padding([.top, .leading, .trailing], 15)
                         })
 
-                        NavigationLink(destination: BalanceView(title: "상식퀴즈"), label: {
+                        NavigationLink(destination: CommonView(title: "상식퀴즈"), label: {
                             GameTabCard(imageURL: "game4", gameName: "상식퀴즈").padding([.top, .leading, .trailing], 15)
                         })
 
-                        NavigationLink(destination: BalanceView(title: "아아ㅏㅏ아"), label: {
-                            GameTabCard(imageURL: "game5", gameName: "아ㅏ아ㅏㅏㅇ").padding(15)
+                        NavigationLink(destination: ConsonantView(title: "초성퀴즈"), label: {
+                            GameTabCard(imageURL: "game5", gameName: "초성퀴즈").padding(15)
                         })
                     }
                     

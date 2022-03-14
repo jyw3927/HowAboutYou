@@ -22,16 +22,17 @@ struct ContentView: View {
         NavigationView {
             
             TabView {
-                ConversationTabView(title: "대화")
-                    .tabItem {
-                        Image("conversation")
-                        Text("대화")
-                    }
-                    .tag(0)
                 
                 GameTabView(title: "게임")        .tabItem {
                         Image("game")
                         Text("게임")
+                    }
+                    .tag(0)
+                
+                ConversationTabView(title: "대화")
+                    .tabItem {
+                        Image("conversation")
+                        Text("대화")
                     }
                     .tag(0)
                 
@@ -48,6 +49,7 @@ struct ContentView: View {
                         Text("마이페이지")
                     }
                     .tag(0)
+                
             } // TabView
             .accentColor(Color("EnabledColor"))
             .navigationTitle("")

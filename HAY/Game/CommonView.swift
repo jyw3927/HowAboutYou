@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct QuizView: View {
+struct CommonView: View {
     @Environment(\.presentationMode) var presentationMode
     var title: String
     
@@ -97,8 +97,8 @@ struct QuizView: View {
     }
 }
 
-struct Previews_QuizView_Previews: PreviewProvider {
+struct Previews_CommonView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizView(title: "밸런스게임")
+        CommonView(title: "상식퀴즈")
     }
 }
