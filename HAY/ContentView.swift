@@ -29,17 +29,17 @@ struct ContentView: View {
                     }
                     .tag(0)
                 
-                ConversationTabView(title: "대화")
-                    .tabItem {
-                        Image("conversation")
-                        Text("대화")
-                    }
-                    .tag(0)
-                
                 TestTabView(title: "심리테스트")
                     .tabItem {
                         Image("test")
                         Text("심리테스트")
+                    }
+                    .tag(0)
+                
+                ConversationTabView(title: "대화")
+                    .tabItem {
+                        Image("conversation")
+                        Text("대화")
                     }
                     .tag(0)
                 

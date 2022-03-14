@@ -31,7 +31,7 @@ struct ConsonantView: View {
                     
                     Spacer()
                     
-                    Text("여러가지 감정을 뜻하는\n사자성어 희노애락은\n각각 어떤 감정을 뜻하나요?")
+                    Text("초성이 들어가는 단어를\n돌아가면서 말해보세요!")
                         .font(.system(size: 25))
                         .foregroundColor(Color("EnabledColor"))
                         .fontWeight(.bold)
@@ -40,10 +40,11 @@ struct ConsonantView: View {
                     Spacer()
                     
                     ZStack {
-                        Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isAnswerTapped ? Color("SecondaryColor") : Color("EnabledColor"))
+                        Rectangle().frame(width: 300, height: 300, alignment: .center).foregroundColor(isAnswerTapped ? Color("SecondaryColor") : Color("EnabledColor"))
                         .cornerRadius(20)
                         
-                        Text(isAnswerTapped ? "기쁨, 노여움,\n슬픔, 즐거움" : "정답보기").font(.system(size: 30)).fontWeight(.bold)
+                        Text(isAnswerTapped ? "홍수  홍삼  황사  한숨\n행사  하수  현실  혜성\n홀수  헬스  환상  허세\n하사  휴식  형상  훈수\n\n등등" : "ㅎㅅ").font(.system(size: 30)).fontWeight(.bold)
+                            .multilineTextAlignment(.center)
                     }.padding(.bottom, 30.0)
                         .onTapGesture {
                             self.isAnswerTapped.toggle()
