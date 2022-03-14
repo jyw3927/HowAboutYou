@@ -81,12 +81,14 @@ struct BalanceView: View {
                         
                     }.padding(.horizontal, 50)
                     
-                    ZStack {
-                        Rectangle().frame(width: 140, height: 50, alignment: .center).foregroundColor(Color("SecondaryColor"))
-                        .cornerRadius(20)
-                        
-                        Text("저장하기").font(.system(size: 22)).fontWeight(.bold)
-                    }.padding(.vertical, 30)
+//                    ZStack {
+//                        Rectangle().frame(width: 140, height: 50, alignment: .center).foregroundColor(Color("SecondaryColor"))
+//                        .cornerRadius(20)
+//
+//                        Text("저장하기").font(.system(size: 22)).fontWeight(.bold)
+//                    }.padding(.vertical, 30)
+                    
+                    Spacer()
                     
                 } // VStack
                 
