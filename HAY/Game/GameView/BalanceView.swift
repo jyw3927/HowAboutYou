@@ -15,6 +15,19 @@ struct BalanceView: View {
     private var isFirstItemTapped: Bool = false
     @State
     private var isSecondItemTapped: Bool = false
+    
+    @State var currentTime : String =  "what's the time?"
+
+        func callCurrentTime() {
+            do {
+                let url = URL(string: "현재시간 호출용 API URL")
+                let response = try String(contentsOf: url!)
+                
+                self.currentTime = response
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }
 
     var body: some View {
             
