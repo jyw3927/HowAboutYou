@@ -16,14 +16,14 @@ struct BalanceView: View {
     @State
     private var isSecondItemTapped: Bool = false
     
-    @State var currentTime : String =  "what's the time?"
+    @State var dataFromServer : String =  "what's the time?"
 
         func callCurrentTime() {
             do {
                 let url = URL(string: "현재시간 호출용 API URL")
                 let response = try String(contentsOf: url!)
                 
-                self.currentTime = response
+                self.dataFromServer = response
             } catch let error as NSError {
                 print(error.localizedDescription)
             }
