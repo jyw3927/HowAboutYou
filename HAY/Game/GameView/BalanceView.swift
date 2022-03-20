@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct BalanceView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -18,16 +19,33 @@ struct BalanceView: View {
     
     @State var dataFromServer : String =  "what's the time?"
 
-        func callCurrentTime() {
-            do {
-                let url = URL(string: "현재시간 호출용 API URL")
-                let response = try String(contentsOf: url!)
-                
-                self.dataFromServer = response
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
+//        func callCurrentTime() {
+//            do {
+//                let url = URL(string: "현재시간 호출용 API URL")
+//                let response = try String(contentsOf: url!)
+//
+//                self.dataFromServer = response
+//            } catch let error as NSError {
+//                print(error.localizedDescription)
+//            }
+//        }
+    
+    
+    func getTest() {
+        let url = "http://35.216.83.86:8080/games/balance-game/random"
+        AF.request(url,
+                   method: .get,
+                   parameters: nil,
+                   encoding: URLEncoding.default,
+                   headers: ["Content-Type":"application/json", "Accept":"application/json"])
+            .validate(statusCode: 200..<300)
+            .responseJSON { (json) in
+                //여기서 가져온 데이터를 자유롭게 활용하세요.
+//                print(json)
+                print(String(data: json.data!, encoding: .utf8))
         }
+    }
+    
 
     var body: some View {
             
@@ -78,11 +96,17 @@ struct BalanceView: View {
                         }
                     
                     HStack {
-                        ZStack {
-                            Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                            
-                            Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
-                        }
+                        Button(action: {
+                            getTest()
+                        }, label: {
+                            ZStack {
+                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
+                                
+                                Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
+                                    .foregroundColor(.black)
+                            }
+                        })
+                        
                         
                         Spacer()
                         
