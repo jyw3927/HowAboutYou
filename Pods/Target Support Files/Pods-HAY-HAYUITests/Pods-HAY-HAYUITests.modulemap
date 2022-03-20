@@ -1,0 +1,6 @@
+framework module Pods_HAY_HAYUITests {
+  umbrella header "Pods-HAY-HAYUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

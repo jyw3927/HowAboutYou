@@ -24,6 +24,9 @@
 		52EA014827CE561900294C48 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014727CE561900294C48 /* BalanceView.swift */; };
 		52EA014D27CE563E00294C48 /* MypageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014C27CE563E00294C48 /* MypageTabView.swift */; };
 		52EA015227CE565F00294C48 /* TestTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA015127CE565F00294C48 /* TestTabView.swift */; };
+		924C364C28344B0C161BF132 /* Pods_HAY_HAYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */; };
+		CDBE73CBAF80C390FF4FC9EA /* Pods_HAYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D973F7C021E73B7ADBD4D /* Pods_HAYTests.framework */; };
+		FE1B2152FAD00F6659C3CB5F /* Pods_HAY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356A8D1572975D8242A9B1D1 /* Pods_HAY.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D52C9C8F469B870EEE78C5A /* Pods-HAY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY.debug.xcconfig"; path = "Target Support Files/Pods-HAY/Pods-HAY.debug.xcconfig"; sourceTree = "<group>"; };
+		103D74C3DF0484ED5EFC6BF2 /* Pods-HAYTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAYTests.debug.xcconfig"; path = "Target Support Files/Pods-HAYTests/Pods-HAYTests.debug.xcconfig"; sourceTree = "<group>"; };
+		177D973F7C021E73B7ADBD4D /* Pods_HAYTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAYTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		356A8D1572975D8242A9B1D1 /* Pods_HAY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E24392821BA71F1B600D867 /* Pods-HAY-HAYUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY-HAYUITests.debug.xcconfig"; path = "Target Support Files/Pods-HAY-HAYUITests/Pods-HAY-HAYUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4405E4BCAABFD3C5F3DC2D3B /* Pods-HAY-HAYUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY-HAYUITests.release.xcconfig"; path = "Target Support Files/Pods-HAY-HAYUITests/Pods-HAY-HAYUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4651106487008FEF03489AC6 /* Pods-HAYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAYTests.release.xcconfig"; path = "Target Support Files/Pods-HAYTests/Pods-HAYTests.release.xcconfig"; sourceTree = "<group>"; };
 		5204844D27D47E1300BBECF9 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		5206909227CE48FD0057D109 /* HAY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5206909527CE48FD0057D109 /* HAYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAYApp.swift; sourceTree = "<group>"; };
@@ -67,6 +77,8 @@
 		52EA014727CE561900294C48 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		52EA014C27CE563E00294C48 /* MypageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTabView.swift; sourceTree = "<group>"; };
 		52EA015127CE565F00294C48 /* TestTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabView.swift; sourceTree = "<group>"; };
+		5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAY_HAYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCD5C3BA5E8FEFF3B74B9545 /* Pods-HAY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY.release.xcconfig"; path = "Target Support Files/Pods-HAY/Pods-HAY.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE1B2152FAD00F6659C3CB5F /* Pods_HAY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBE73CBAF80C390FF4FC9EA /* Pods_HAYTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924C364C28344B0C161BF132 /* Pods_HAY_HAYUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +116,8 @@
 				520690A627CE49000057D109 /* HAYTests */,
 				520690B127CE49000057D109 /* HAYUITests */,
 				5206909327CE48FD0057D109 /* Products */,
+				6948A7D0BD77373F0233F407 /* Pods */,
+				C93399EC1243A1B8C4F52046 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,6 +228,30 @@
 			path = Mypage;
 			sourceTree = "<group>";
 		};
+		6948A7D0BD77373F0233F407 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D52C9C8F469B870EEE78C5A /* Pods-HAY.debug.xcconfig */,
+				FCD5C3BA5E8FEFF3B74B9545 /* Pods-HAY.release.xcconfig */,
+				3E24392821BA71F1B600D867 /* Pods-HAY-HAYUITests.debug.xcconfig */,
+				4405E4BCAABFD3C5F3DC2D3B /* Pods-HAY-HAYUITests.release.xcconfig */,
+				103D74C3DF0484ED5EFC6BF2 /* Pods-HAYTests.debug.xcconfig */,
+				4651106487008FEF03489AC6 /* Pods-HAYTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C93399EC1243A1B8C4F52046 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				356A8D1572975D8242A9B1D1 /* Pods_HAY.framework */,
+				5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */,
+				177D973F7C021E73B7ADBD4D /* Pods_HAYTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 520690B727CE49000057D109 /* Build configuration list for PBXNativeTarget "HAY" */;
 			buildPhases = (
+				F58C5B5A791CDE31EF987D9C /* [CP] Check Pods Manifest.lock */,
 				5206908E27CE48FD0057D109 /* Sources */,
 				5206908F27CE48FD0057D109 /* Frameworks */,
 				5206909027CE48FD0057D109 /* Resources */,
+				DAD91BDF51979665C4D9B42C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 520690BA27CE49000057D109 /* Build configuration list for PBXNativeTarget "HAYTests" */;
 			buildPhases = (
+				1C671B49882034B8595534B2 /* [CP] Check Pods Manifest.lock */,
 				5206909F27CE49000057D109 /* Sources */,
 				520690A027CE49000057D109 /* Frameworks */,
 				520690A127CE49000057D109 /* Resources */,
@@ -253,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 520690BD27CE49000057D109 /* Build configuration list for PBXNativeTarget "HAYUITests" */;
 			buildPhases = (
+				4D9B56DE222D5FFACF2C82C9 /* [CP] Check Pods Manifest.lock */,
 				520690AA27CE49000057D109 /* Sources */,
 				520690AB27CE49000057D109 /* Frameworks */,
 				520690AC27CE49000057D109 /* Resources */,
+				51FEAF8D58511AFD6257FE42 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +380,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C671B49882034B8595534B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HAYTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D9B56DE222D5FFACF2C82C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HAY-HAYUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51FEAF8D58511AFD6257FE42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAY-HAYUITests/Pods-HAY-HAYUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAY-HAYUITests/Pods-HAY-HAYUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HAY-HAYUITests/Pods-HAY-HAYUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD91BDF51979665C4D9B42C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAY/Pods-HAY-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAY/Pods-HAY-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HAY/Pods-HAY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58C5B5A791CDE31EF987D9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HAY-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5206908E27CE48FD0057D109 /* Sources */ = {
@@ -506,6 +655,7 @@
 		};
 		520690B827CE49000057D109 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D52C9C8F469B870EEE78C5A /* Pods-HAY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -527,6 +677,7 @@
 		};
 		520690B927CE49000057D109 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD5C3BA5E8FEFF3B74B9545 /* Pods-HAY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,6 +699,7 @@
 		};
 		520690BB27CE49000057D109 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103D74C3DF0484ED5EFC6BF2 /* Pods-HAYTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -569,6 +721,7 @@
 		};
 		520690BC27CE49000057D109 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4651106487008FEF03489AC6 /* Pods-HAYTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -590,6 +743,7 @@
 		};
 		520690BE27CE49000057D109 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E24392821BA71F1B600D867 /* Pods-HAY-HAYUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -609,6 +763,7 @@
 		};
 		520690BF27CE49000057D109 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4405E4BCAABFD3C5F3DC2D3B /* Pods-HAY-HAYUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
