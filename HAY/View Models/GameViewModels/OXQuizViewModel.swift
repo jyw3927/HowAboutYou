@@ -35,12 +35,12 @@ class OXQuizViewModel: ObservableObject {
         self.oxQuiz?.id ?? 0
     }
     
-    var firstChoice: String {
+    var question: String {
         self.oxQuiz?.question ?? ""
     }
     
-    var secondChoice: String {
-        self.oxQuiz?.answer ?? ""
+    var answer: Bool {
+        self.oxQuiz?.answer ?? true
     }
     
 }

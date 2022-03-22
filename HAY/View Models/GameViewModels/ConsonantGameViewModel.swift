@@ -35,11 +35,11 @@ class ConsonantGameViewModel: ObservableObject {
         self.consonant?.id ?? 0
     }
     
-    var firstChoice: String {
-        self.consonant?.consonant ?? ""
+    var question: String {
+        self.consonant?.question ?? ""
     }
     
-    var secondChoice: String {
+    var example: String {
         self.consonant?.example ?? ""
     }
     

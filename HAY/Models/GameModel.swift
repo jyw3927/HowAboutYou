@@ -36,7 +36,7 @@ struct WithOneMouth: Codable {
 struct OXQuiz: Codable {
     let id: Int
     let question: String
-    let answer: String
+    let answer: Bool
     
     private enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -61,12 +61,12 @@ struct CommonSenseQuiz: Codable {
 
 struct ConsonantGame: Codable {
     let id: Int
-    let consonant: String
+    let question: String
     let example: String
     
     private enum CodingKeys: String, CodingKey {
         case id = "id"
-        case consonant = "consonant"
+        case question = "question"
         case example = "example"
     }
     

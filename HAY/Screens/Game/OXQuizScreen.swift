@@ -13,6 +13,13 @@ struct OXQuizScreen: View {
     
     @State
     private var isAnswerTapped: Bool = false
+    
+    @ObservedObject private var oxQuizVM: OXQuizViewModel
+    
+    init() {
+        self.oxQuizVM = OXQuizViewModel()
+        oxQuizVM.getOXQuizRandomly()
+    }
 
     var body: some View {
             
@@ -31,11 +38,12 @@ struct OXQuizScreen: View {
                     
                     Spacer()
                     
-                    Text("여러가지 감정을 뜻하는\n사자성어 희노애락은\n각각 어떤 감정을 뜻하나요?")
+                    Text(self.oxQuizVM.question)
                         .font(.system(size: 25))
                         .foregroundColor(Color("EnabledColor"))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
+                        .padding(.horizontal, 30)
                     
                     Spacer()
                     
@@ -43,7 +51,7 @@ struct OXQuizScreen: View {
                         Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isAnswerTapped ? Color("SecondaryColor") : Color("EnabledColor"))
                         .cornerRadius(20)
                         
-                        Text(isAnswerTapped ? "기쁨, 노여움,\n슬픔, 즐거움" : "정답보기").font(.system(size: 30)).fontWeight(.bold)
+                        Text(isAnswerTapped ? self.oxQuizVM.answer ? "O" : "X" : "정답보기").font(.system(size: 30)).fontWeight(.bold)
                     }.padding(.bottom, 30.0)
                         .onTapGesture {
                             self.isAnswerTapped.toggle()
@@ -53,19 +61,29 @@ struct OXQuizScreen: View {
                         .frame(height: 50)
                     
                     HStack {
-                        ZStack {
-                            Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                            
-                            Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
-                        }
+                        Button(action: {
+                            self.oxQuizVM.getOXQuizRandomly()
+                        }, label: {
+                            ZStack {
+                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
+                                
+                                Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
+                                    .foregroundColor(.black)
+                            }
+                        })
                         
                         Spacer()
                         
-                        ZStack {
-                            Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                            
-                            Image(systemName: "arrow.right").resizable().frame(width: 20, height: 20)
-                        }
+                        Button(action: {
+                            self.oxQuizVM.getOXQuizRandomly()
+                        }, label: {
+                            ZStack {
+                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
+                                
+                                Image(systemName: "arrow.right").resizable().frame(width: 20, height: 20)
+                                    .foregroundColor(.black)
+                            }
+                        })
                         
                     }.padding(.horizontal, 50)
                     

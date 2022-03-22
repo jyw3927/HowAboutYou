@@ -35,11 +35,11 @@ class CommonSenseQuizViewModel: ObservableObject {
         self.commonsense?.id ?? 0
     }
     
-    var firstChoice: String {
+    var question: String {
         self.commonsense?.question ?? ""
     }
     
-    var secondChoice: String {
+    var answer: String {
         self.commonsense?.answer ?? ""
     }
     
