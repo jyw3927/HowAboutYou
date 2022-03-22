@@ -15,6 +15,13 @@ struct WithOneMouthScreen: View {
     private var isFirstItemTapped: Bool = false
     @State
     private var isSecondItemTapped: Bool = false
+    
+    @ObservedObject private var withOneMouthVM: WithOneMouthViewModel
+    
+    init() {
+        self.withOneMouthVM = WithOneMouthViewModel()
+        withOneMouthVM.getWithOneMouthRandomly()
+    }
 
     var body: some View {
             
@@ -36,15 +43,20 @@ struct WithOneMouthScreen: View {
                     ZStack {
                         Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isFirstItemTapped ? Color("SecondaryColor") : Color("EnabledColor"))
                         .cornerRadius(20)
-                        .onTapGesture {
-                            self.isFirstItemTapped.toggle()
-                            
-                            if (isSecondItemTapped) {
-                                self.isSecondItemTapped.toggle()
-                            }
-                        }
                         
-                        Text("내 흑역사 전세계에\n공유하고 5억 받기").font(.system(size: 30)).fontWeight(.bold)
+                        
+                        Text(self.withOneMouthVM.firstChoice)
+                            .font(.system(size: 30))
+                            .fontWeight(.bold)
+                            .frame(width: 300, height: 200, alignment: .center)
+                            .minimumScaleFactor(0.5)
+                            
+                    }.onTapGesture {
+                        self.isFirstItemTapped.toggle()
+                        
+                        if (isSecondItemTapped) {
+                            self.isSecondItemTapped.toggle()
+                        }
                     }
                     
                     Text("VS")
@@ -54,7 +66,11 @@ struct WithOneMouthScreen: View {
                         Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isSecondItemTapped ? Color("SecondaryColor") : Color("EnabledColor"))
                         .cornerRadius(20)
                         
-                        Text("그냥 살기").font(.system(size: 30)).fontWeight(.bold)
+                        Text(self.withOneMouthVM.secondChoice)
+                            .font(.system(size: 30))
+                            .fontWeight(.bold)
+                            .frame(width: 300, height: 200, alignment: .center)
+                            .minimumScaleFactor(0.5)
                     }.padding(.bottom, 30.0)
                         .onTapGesture {
                             self.isSecondItemTapped.toggle()
@@ -65,19 +81,30 @@ struct WithOneMouthScreen: View {
                         }
                     
                     HStack {
-                        ZStack {
-                            Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                            
-                            Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
-                        }
+                        Button(action: {
+                            self.withOneMouthVM.getWithOneMouthRandomly()
+                        }, label: {
+                            ZStack {
+                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
+                                
+                                Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
+                                    .foregroundColor(.black)
+                            }
+                        })
+                        
                         
                         Spacer()
                         
-                        ZStack {
-                            Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                            
-                            Image(systemName: "arrow.right").resizable().frame(width: 20, height: 20)
-                        }
+                        Button(action: {
+                            self.withOneMouthVM.getWithOneMouthRandomly()
+                        }, label: {
+                            ZStack {
+                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
+                                
+                                Image(systemName: "arrow.right").resizable().frame(width: 20, height: 20)
+                                    .foregroundColor(.black)
+                            }
+                        })
                         
                     }.padding(.horizontal, 50)
                     

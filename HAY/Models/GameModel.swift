@@ -27,8 +27,8 @@ struct WithOneMouth: Codable {
     
     private enum CodingKeys: String, CodingKey {
         case id = "id"
-        case firstChoice = "word1"
-        case secondChoice = "word2"
+        case firstChoice = "words1"
+        case secondChoice = "words2"
     }
     
 }

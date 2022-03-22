@@ -12,12 +12,12 @@ struct BalanceGameScreen: View {
     @Environment(\.presentationMode) var presentationMode
     let title: String = "밸런스게임"
     
-    @ObservedObject private var balanceGameVM: BalanceGameViewModel
-    
     @State
     private var isFirstItemTapped: Bool = false
     @State
     private var isSecondItemTapped: Bool = false
+    
+    @ObservedObject private var balanceGameVM: BalanceGameViewModel
     
     init() {
         self.balanceGameVM = BalanceGameViewModel()
@@ -44,15 +44,20 @@ struct BalanceGameScreen: View {
                     ZStack {
                         Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isFirstItemTapped ? Color("SecondaryColor") : Color("EnabledColor"))
                         .cornerRadius(20)
-                        .onTapGesture {
-                            self.isFirstItemTapped.toggle()
-                            
-                            if (isSecondItemTapped) {
-                                self.isSecondItemTapped.toggle()
-                            }
-                        }
                         
-                        Text(self.balanceGameVM.firstChoice).font(.system(size: 30)).fontWeight(.bold).frame(width: 300, height: 200, alignment: .center).minimumScaleFactor(0.5)
+                        
+                        Text(self.balanceGameVM.firstChoice)
+                            .font(.system(size: 30))
+                            .fontWeight(.bold)
+                            .frame(width: 300, height: 200, alignment: .center)
+                            .minimumScaleFactor(0.5)
+                            
+                    }.onTapGesture {
+                        self.isFirstItemTapped.toggle()
+                        
+                        if (isSecondItemTapped) {
+                            self.isSecondItemTapped.toggle()
+                        }
                     }
                     
                     Text("VS")
@@ -62,7 +67,11 @@ struct BalanceGameScreen: View {
                         Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isSecondItemTapped ? Color("SecondaryColor") : Color("EnabledColor"))
                         .cornerRadius(20)
                         
-                        Text(self.balanceGameVM.secondChoice).font(.system(size: 30)).fontWeight(.bold).frame(width: 300, height: 200, alignment: .center).minimumScaleFactor(0.5)
+                        Text(self.balanceGameVM.secondChoice)
+                            .font(.system(size: 30))
+                            .fontWeight(.bold)
+                            .frame(width: 300, height: 200, alignment: .center)
+                            .minimumScaleFactor(0.5)
                     }.padding(.bottom, 30.0)
                         .onTapGesture {
                             self.isSecondItemTapped.toggle()

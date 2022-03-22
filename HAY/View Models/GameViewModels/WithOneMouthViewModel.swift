@@ -17,8 +17,8 @@ class WithOneMouthViewModel: ObservableObject {
         self.withOM = withOM
     }
     
-    func getBalanceGameRandomly() {
-        httpClient.getBalanceGame() { result in
+    func getWithOneMouthRandomly() {
+        httpClient.getWithOneMouth() { result in
             switch result {
                 case .success(let game):
                     DispatchQueue.main.async {
