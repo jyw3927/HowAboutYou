@@ -8,6 +8,12 @@
 import SwiftUI
 import Alamofire
 
+//struct Game: Codable {
+//    var id: Int
+//    var solution1: String
+//    var solution2: String
+//}
+
 struct BalanceView: View {
     @Environment(\.presentationMode) var presentationMode
     var title: String

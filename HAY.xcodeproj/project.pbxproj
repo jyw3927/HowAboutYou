@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,8 @@
 		52EA014827CE561900294C48 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014727CE561900294C48 /* BalanceView.swift */; };
 		52EA014D27CE563E00294C48 /* MypageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014C27CE563E00294C48 /* MypageTabView.swift */; };
 		52EA015227CE565F00294C48 /* TestTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA015127CE565F00294C48 /* TestTabView.swift */; };
+		52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071227E9AE000029A051 /* URL+Extensions.swift */; };
+		52EE071827E9AEFB0029A051 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071727E9AEFB0029A051 /* Constants.swift */; };
 		924C364C28344B0C161BF132 /* Pods_HAY_HAYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */; };
 		CDBE73CBAF80C390FF4FC9EA /* Pods_HAYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D973F7C021E73B7ADBD4D /* Pods_HAYTests.framework */; };
 		FE1B2152FAD00F6659C3CB5F /* Pods_HAY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356A8D1572975D8242A9B1D1 /* Pods_HAY.framework */; };
@@ -77,6 +79,8 @@
 		52EA014727CE561900294C48 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		52EA014C27CE563E00294C48 /* MypageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTabView.swift; sourceTree = "<group>"; };
 		52EA015127CE565F00294C48 /* TestTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabView.swift; sourceTree = "<group>"; };
+		52EE071227E9AE000029A051 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		52EE071727E9AEFB0029A051 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAY_HAYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD5C3BA5E8FEFF3B74B9545 /* Pods-HAY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY.release.xcconfig"; path = "Target Support Files/Pods-HAY/Pods-HAY.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +138,15 @@
 		5206909427CE48FD0057D109 /* HAY */ = {
 			isa = PBXGroup;
 			children = (
+				52EE071127E9ADC00029A051 /* Views */,
+				52EE071027E9ADBB0029A051 /* Screens */,
+				52EE070F27E9ADB50029A051 /* Extensions */,
+				52EE070E27E9ADAF0029A051 /* Controls */,
+				52EE070D27E9ADA90029A051 /* Loaders */,
+				52EE070C27E9AD9A0029A051 /* Services */,
+				52EE070B27E9AD920029A051 /* View Models */,
+				52EE070A27E9AD890029A051 /* Utils */,
+				52EE070927E9AD830029A051 /* Models */,
 				52EA013427CE556900294C48 /* Mypage */,
 				52EA013327CE555400294C48 /* Game */,
 				52EA013227CE554B00294C48 /* Conversation */,
@@ -228,6 +241,71 @@
 			path = Mypage;
 			sourceTree = "<group>";
 		};
+		52EE070927E9AD830029A051 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52EE070A27E9AD890029A051 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				52EE071727E9AEFB0029A051 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		52EE070B27E9AD920029A051 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		52EE070C27E9AD9A0029A051 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		52EE070D27E9ADA90029A051 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		52EE070E27E9ADAF0029A051 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		52EE070F27E9ADB50029A051 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52EE071227E9AE000029A051 /* URL+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52EE071027E9ADBB0029A051 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		52EE071127E9ADC00029A051 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6948A7D0BD77373F0233F407 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,7 +316,6 @@
 				103D74C3DF0484ED5EFC6BF2 /* Pods-HAYTests.debug.xcconfig */,
 				4651106487008FEF03489AC6 /* Pods-HAYTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -490,9 +567,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EA013E27CE55D100294C48 /* GameTabView.swift in Sources */,
+				52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */,
 				5206909627CE48FD0057D109 /* HAYApp.swift in Sources */,
 				5204844E27D47E1300BBECF9 /* GameModel.swift in Sources */,
 				52A9C02C27DF433D0053893E /* UnanimouslyView.swift in Sources */,
+				52EE071827E9AEFB0029A051 /* Constants.swift in Sources */,
 				525BCA1A27D2054E006C151A /* ContentView.swift in Sources */,
 				52EA014827CE561900294C48 /* BalanceView.swift in Sources */,
 				52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */,
