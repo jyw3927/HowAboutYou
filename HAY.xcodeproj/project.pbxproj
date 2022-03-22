@@ -217,9 +217,9 @@
 			children = (
 				52EA013D27CE55D100294C48 /* GameTabView.swift */,
 				52EA014727CE561900294C48 /* BalanceGameScreen.swift */,
-				52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */,
-				52A9C02527DF41E90053893E /* OXQuizScreen.swift */,
 				52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */,
+				52A9C02527DF41E90053893E /* OXQuizScreen.swift */,
+				52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */,
 				52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */,
 			);
 			path = Game;

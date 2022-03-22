@@ -19,3 +19,55 @@ struct BalanceGame: Codable {
     }
     
 }
+
+struct WithOneMouthGame: Codable {
+    let id: Int
+    let firstChoice: String
+    let secondChoice: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case firstChoice = "word1"
+        case secondChoice = "word2"
+    }
+    
+}
+
+struct OXQuiz: Codable {
+    let id: Int
+    let question: String
+    let answer: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case question = "question"
+        case answer = "answer"
+    }
+    
+}
+
+struct CommonSenseQuiz: Codable {
+    let id: Int
+    let question: String
+    let answer: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case question = "question"
+        case answer = "answer"
+    }
+    
+}
+
+struct ConsonantGame: Codable {
+    let id: Int
+    let consonant: String
+    let example: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case consonant = "consonant"
+        case example = "example"
+    }
+    
+}
