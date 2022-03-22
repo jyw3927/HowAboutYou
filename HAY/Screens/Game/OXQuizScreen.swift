@@ -63,6 +63,7 @@ struct OXQuizScreen: View {
                     HStack {
                         Button(action: {
                             self.oxQuizVM.getOXQuizRandomly()
+                            self.isAnswerTapped = false
                         }, label: {
                             ZStack {
                                 Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
@@ -76,6 +77,7 @@ struct OXQuizScreen: View {
                         
                         Button(action: {
                             self.oxQuizVM.getOXQuizRandomly()
+                            self.isAnswerTapped = false
                         }, label: {
                             ZStack {
                                 Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))

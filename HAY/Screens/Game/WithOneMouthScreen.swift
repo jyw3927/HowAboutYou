@@ -83,6 +83,8 @@ struct WithOneMouthScreen: View {
                     HStack {
                         Button(action: {
                             self.withOneMouthVM.getWithOneMouthRandomly()
+                            self.isFirstItemTapped = false
+                            self.isSecondItemTapped = false
                         }, label: {
                             ZStack {
                                 Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
@@ -97,6 +99,8 @@ struct WithOneMouthScreen: View {
                         
                         Button(action: {
                             self.withOneMouthVM.getWithOneMouthRandomly()
+                            self.isFirstItemTapped = false
+                            self.isSecondItemTapped = false
                         }, label: {
                             ZStack {
                                 Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))

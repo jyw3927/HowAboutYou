@@ -62,6 +62,7 @@ struct CommonSenseQuizScreen: View {
                     HStack {
                         Button(action: {
                             self.commonSenseQuizVM.getCommonSenseQuizRandomly()
+                            self.isAnswerTapped = false
                         }, label: {
                             ZStack {
                                 Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
@@ -75,6 +76,7 @@ struct CommonSenseQuizScreen: View {
                         
                         Button(action: {
                             self.commonSenseQuizVM.getCommonSenseQuizRandomly()
+                            self.isAnswerTapped = false
                         }, label: {
                             ZStack {
                                 Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))

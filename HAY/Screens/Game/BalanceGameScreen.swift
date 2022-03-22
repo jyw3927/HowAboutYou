@@ -84,6 +84,8 @@ struct BalanceGameScreen: View {
                     HStack {
                         Button(action: {
                             self.balanceGameVM.getBalanceGameRandomly()
+                            self.isFirstItemTapped = false
+                            self.isSecondItemTapped = false
                         }, label: {
                             ZStack {
                                 Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
@@ -98,6 +100,8 @@ struct BalanceGameScreen: View {
                         
                         Button(action: {
                             self.balanceGameVM.getBalanceGameRandomly()
+                            self.isFirstItemTapped = false
+                            self.isSecondItemTapped = false
                         }, label: {
                             ZStack {
                                 Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))

@@ -65,6 +65,7 @@ struct ConsonantGameScreen: View {
                     HStack {
                         Button(action: {
                             self.consonantGameVM.getConsonantGameRandomly()
+                            self.isAnswerTapped = false
                         }, label: {
                             ZStack {
                                 Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
@@ -78,6 +79,7 @@ struct ConsonantGameScreen: View {
                         
                         Button(action: {
                             self.consonantGameVM.getConsonantGameRandomly()
+                            self.isAnswerTapped = false
                         }, label: {
                             ZStack {
                                 Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
