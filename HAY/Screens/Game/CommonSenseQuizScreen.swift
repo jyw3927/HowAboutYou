@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct CommonView: View {
+struct CommonSenseQuizScreen: View {
     @Environment(\.presentationMode) var presentationMode
-    var title: String
+    var title: String = "상식퀴즈"
     
     @State
     private var isAnswerTapped: Bool = false
@@ -94,11 +94,5 @@ struct CommonView: View {
             .navigationBarHidden(true)
 //            .navigationBarTitleDisplayMode(.inline)
         
-    }
-}
-
-struct Previews_CommonView_Previews: PreviewProvider {
-    static var previews: some View {
-        CommonView(title: "상식퀴즈")
     }
 }

@@ -1,25 +1,18 @@
 //
-//  BalanceView.swift
-//  toyProj
+//  OXView.swift
+//  HAY
 //
-//  Created by 전영우 on 2022/02/14.
+//  Created by 전영우 on 2022/03/14.
 //
 
 import SwiftUI
-import Alamofire
 
-struct BalanceView: View {
+struct OXQuizScreen: View {
     @Environment(\.presentationMode) var presentationMode
-    var title: String
+    var title: String = "O/X 퀴즈"
     
     @State
-    private var isFirstItemTapped: Bool = false
-    @State
-    private var isSecondItemTapped: Bool = false
-    
-    @State var dataFromServer : String =  "what's the time?"
-    
-    let httpClient = HTTPClient()
+    private var isAnswerTapped: Bool = false
 
     var body: some View {
             
@@ -38,49 +31,33 @@ struct BalanceView: View {
                     
                     Spacer()
                     
-                    ZStack {
-                        Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isFirstItemTapped ? Color("SecondaryColor") : Color("EnabledColor"))
-                        .cornerRadius(20)
-                        .onTapGesture {
-                            self.isFirstItemTapped.toggle()
-                            
-                            if (isSecondItemTapped) {
-                                self.isSecondItemTapped.toggle()
-                            }
-                        }
-                        
-                        Text("내 흑역사 전세계에\n공유하고 5억 받기").font(.system(size: 30)).fontWeight(.bold)
-                    }
+                    Text("여러가지 감정을 뜻하는\n사자성어 희노애락은\n각각 어떤 감정을 뜻하나요?")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color("EnabledColor"))
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
                     
-                    Text("VS")
-                        .font(.system(size: 40)).fontWeight(.semibold).foregroundColor(Color("EnabledColor"))
+                    Spacer()
                     
                     ZStack {
-                        Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isSecondItemTapped ? Color("SecondaryColor") : Color("EnabledColor"))
+                        Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isAnswerTapped ? Color("SecondaryColor") : Color("EnabledColor"))
                         .cornerRadius(20)
                         
-                        Text("그냥 살기").font(.system(size: 30)).fontWeight(.bold)
+                        Text(isAnswerTapped ? "기쁨, 노여움,\n슬픔, 즐거움" : "정답보기").font(.system(size: 30)).fontWeight(.bold)
                     }.padding(.bottom, 30.0)
                         .onTapGesture {
-                            self.isSecondItemTapped.toggle()
-                            
-                            if (isFirstItemTapped) {
-                                self.isFirstItemTapped.toggle()
-                            }
+                            self.isAnswerTapped.toggle()
                         }
                     
+                    Spacer()
+                        .frame(height: 50)
+                    
                     HStack {
-                        Button(action: {
-                            httpClient.getBalanceGame()
-                        }, label: {
-                            ZStack {
-                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                                
-                                Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
-                                    .foregroundColor(.black)
-                            }
-                        })
-                        
+                        ZStack {
+                            Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
+                            
+                            Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
+                        }
                         
                         Spacer()
                         
@@ -117,11 +94,5 @@ struct BalanceView: View {
             .navigationBarHidden(true)
 //            .navigationBarTitleDisplayMode(.inline)
         
-    }
-}
-
-struct Previews_BalanceView_Previews: PreviewProvider {
-    static var previews: some View {
-        BalanceView(title: "밸런스게임")
     }
 }

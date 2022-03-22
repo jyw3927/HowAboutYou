@@ -1,20 +1,28 @@
 //
-//  UnanimouslyView.swift
-//  HAY
+//  BalanceView.swift
+//  toyProj
 //
-//  Created by 전영우 on 2022/03/14.
+//  Created by 전영우 on 2022/02/14.
 //
 
 import SwiftUI
+import Alamofire
 
-struct UnanimouslyView: View {
+struct BalanceGameScreen: View {
     @Environment(\.presentationMode) var presentationMode
-    var title: String
+    let title: String = "밸런스게임"
+    
+    @ObservedObject private var balanceGameVM: BalanceGameViewModel
     
     @State
     private var isFirstItemTapped: Bool = false
     @State
     private var isSecondItemTapped: Bool = false
+    
+    init() {
+        self.balanceGameVM = BalanceGameViewModel()
+        balanceGameVM.getBalanceGameRandomly()
+    }
 
     var body: some View {
             
@@ -44,7 +52,7 @@ struct UnanimouslyView: View {
                             }
                         }
                         
-                        Text("내 흑역사 전세계에\n공유하고 5억 받기").font(.system(size: 30)).fontWeight(.bold)
+                        Text(self.balanceGameVM.firstChoice).font(.system(size: 30)).fontWeight(.bold).frame(width: 300, height: 200, alignment: .center).minimumScaleFactor(0.5)
                     }
                     
                     Text("VS")
@@ -54,7 +62,7 @@ struct UnanimouslyView: View {
                         Rectangle().frame(width: 300, height: 200, alignment: .center).foregroundColor(isSecondItemTapped ? Color("SecondaryColor") : Color("EnabledColor"))
                         .cornerRadius(20)
                         
-                        Text("그냥 살기").font(.system(size: 30)).fontWeight(.bold)
+                        Text(self.balanceGameVM.secondChoice).font(.system(size: 30)).fontWeight(.bold).frame(width: 300, height: 200, alignment: .center).minimumScaleFactor(0.5)
                     }.padding(.bottom, 30.0)
                         .onTapGesture {
                             self.isSecondItemTapped.toggle()
@@ -65,19 +73,30 @@ struct UnanimouslyView: View {
                         }
                     
                     HStack {
-                        ZStack {
-                            Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                            
-                            Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
-                        }
+                        Button(action: {
+                            self.balanceGameVM.getBalanceGameRandomly()
+                        }, label: {
+                            ZStack {
+                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
+                                
+                                Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
+                                    .foregroundColor(.black)
+                            }
+                        })
+                        
                         
                         Spacer()
                         
-                        ZStack {
-                            Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                            
-                            Image(systemName: "arrow.right").resizable().frame(width: 20, height: 20)
-                        }
+                        Button(action: {
+                            self.balanceGameVM.getBalanceGameRandomly()
+                        }, label: {
+                            ZStack {
+                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
+                                
+                                Image(systemName: "arrow.right").resizable().frame(width: 20, height: 20)
+                                    .foregroundColor(.black)
+                            }
+                        })
                         
                     }.padding(.horizontal, 50)
                     
@@ -109,8 +128,8 @@ struct UnanimouslyView: View {
     }
 }
 
-struct Previews_UnanimouslyView_Previews: PreviewProvider {
-    static var previews: some View {
-        UnanimouslyView(title: "이구동성")
-    }
-}
+//struct Previews_BalanceView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BalanceView(title: "밸런스게임")
+//    }
+//}

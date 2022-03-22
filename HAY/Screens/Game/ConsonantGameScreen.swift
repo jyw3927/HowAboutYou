@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct ConsonantView: View {
+struct ConsonantGameScreen: View {
     @Environment(\.presentationMode) var presentationMode
-    var title: String
+    var title: String = "초성게임"
     
     @State
     private var isAnswerTapped: Bool = false
@@ -95,11 +95,5 @@ struct ConsonantView: View {
             .navigationBarHidden(true)
 //            .navigationBarTitleDisplayMode(.inline)
         
-    }
-}
-
-struct Previews_ConsonantView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConsonantView(title: "초성게임")
     }
 }

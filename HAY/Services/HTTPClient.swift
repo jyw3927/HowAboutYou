@@ -17,20 +17,44 @@ enum NetworkError: Error {
 class HTTPClient {
     
 //    func getGame (_ gameModelName: Codable) { 이런식으로 하나로 통일하는법
-    func getBalanceGame () {
-        let url = URL.forRandomGameByName("balance-game")
+    
+    // 이건 Alamofire임.
+//    func getBalanceGame() {
+//        let url = URL.forRandomGameByName("balance-game")
+//
+//        AF.request(url!,
+//                   method: .get,
+//                   parameters: nil,
+//                   encoding: URLEncoding.default,
+//                   headers: ["Content-Type":"application/json", "Accept":"application/json"])
+//            .validate(statusCode: 200..<300)
+//            .responseDecodable(of: BalanceGame.self) { (json) in
+//
+//                print(json)
+//
+//        }
+//    }
+    
+    func getBalanceGame(completion: @escaping (Result<BalanceGame, NetworkError>) -> Void) {
         
-        AF.request(url!,
-                   method: .get,
-                   parameters: nil,
-                   encoding: URLEncoding.default,
-                   headers: ["Content-Type":"application/json", "Accept":"application/json"])
-            .validate(statusCode: 200..<300)
-            .responseDecodable(of: BalanceGame.self) { (json) in
-                
-                print(json)
-                
+        guard let url = URL.forRandomGameByName("balance-game") else {
+            return completion(.failure(.badURL))
         }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            
+            guard let data = data, error == nil else {
+                return completion(.failure(.noData))
+            }
+            
+            guard let balanceGame = try? JSONDecoder().decode(BalanceGame.self, from: data) else {
+                return completion(.failure(.decodingError))
+            }
+            
+            completion(.success(balanceGame))
+            
+        }.resume()
+        
     }
     
 }

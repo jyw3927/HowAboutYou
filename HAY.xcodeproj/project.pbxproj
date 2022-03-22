@@ -7,26 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5204844E27D47E1300BBECF9 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5204844D27D47E1300BBECF9 /* GameModel.swift */; };
 		5206909627CE48FD0057D109 /* HAYApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206909527CE48FD0057D109 /* HAYApp.swift */; };
 		5206909A27CE49000057D109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206909927CE49000057D109 /* Assets.xcassets */; };
 		5206909D27CE49000057D109 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206909C27CE49000057D109 /* Preview Assets.xcassets */; };
 		520690A827CE49000057D109 /* HAYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520690A727CE49000057D109 /* HAYTests.swift */; };
 		520690B327CE49000057D109 /* HAYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520690B227CE49000057D109 /* HAYUITests.swift */; };
 		525BCA1A27D2054E006C151A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCA1927D2054E006C151A /* ContentView.swift */; };
-		52A9C02127DF3DF40053893E /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02027DF3DF40053893E /* CommonView.swift */; };
-		52A9C02627DF41E90053893E /* OXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02527DF41E90053893E /* OXView.swift */; };
-		52A9C02C27DF433D0053893E /* UnanimouslyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02B27DF433D0053893E /* UnanimouslyView.swift */; };
-		52A9C03427DF439F0053893E /* ConsonantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C03327DF439F0053893E /* ConsonantView.swift */; };
+		52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */; };
+		52A9C02627DF41E90053893E /* OXQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02527DF41E90053893E /* OXQuizScreen.swift */; };
+		52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */; };
+		52A9C03427DF439F0053893E /* ConsonantGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */; };
 		52EA013627CE55A200294C48 /* ConversationTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA013527CE55A200294C48 /* ConversationTabView.swift */; };
 		52EA013E27CE55D100294C48 /* GameTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA013D27CE55D100294C48 /* GameTabView.swift */; };
 		52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014227CE55FB00294C48 /* GameTabCard.swift */; };
-		52EA014827CE561900294C48 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014727CE561900294C48 /* BalanceView.swift */; };
+		52EA014827CE561900294C48 /* BalanceGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014727CE561900294C48 /* BalanceGameScreen.swift */; };
 		52EA014D27CE563E00294C48 /* MypageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014C27CE563E00294C48 /* MypageTabView.swift */; };
 		52EA015227CE565F00294C48 /* TestTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA015127CE565F00294C48 /* TestTabView.swift */; };
 		52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071227E9AE000029A051 /* URL+Extensions.swift */; };
 		52EE071827E9AEFB0029A051 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071727E9AEFB0029A051 /* Constants.swift */; };
-		52EE071F27E9B1450029A051 /* BalanceGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071E27E9B1450029A051 /* BalanceGame.swift */; };
+		52EE071F27E9B1450029A051 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071E27E9B1450029A051 /* GameModel.swift */; };
 		52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE072627E9B2030029A051 /* HTTPClient.swift */; };
 		52EE072D27E9B6D30029A051 /* BalanceGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */; };
 		52EE073527E9B70F0029A051 /* ViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE073427E9B70F0029A051 /* ViewModelBase.swift */; };
@@ -60,7 +59,6 @@
 		3E24392821BA71F1B600D867 /* Pods-HAY-HAYUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY-HAYUITests.debug.xcconfig"; path = "Target Support Files/Pods-HAY-HAYUITests/Pods-HAY-HAYUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4405E4BCAABFD3C5F3DC2D3B /* Pods-HAY-HAYUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY-HAYUITests.release.xcconfig"; path = "Target Support Files/Pods-HAY-HAYUITests/Pods-HAY-HAYUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4651106487008FEF03489AC6 /* Pods-HAYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAYTests.release.xcconfig"; path = "Target Support Files/Pods-HAYTests/Pods-HAYTests.release.xcconfig"; sourceTree = "<group>"; };
-		5204844D27D47E1300BBECF9 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		5206909227CE48FD0057D109 /* HAY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5206909527CE48FD0057D109 /* HAYApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAYApp.swift; sourceTree = "<group>"; };
 		5206909927CE49000057D109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,19 +71,19 @@
 		520690B227CE49000057D109 /* HAYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAYUITests.swift; sourceTree = "<group>"; };
 		520690B427CE49000057D109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525BCA1927D2054E006C151A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		52A9C02027DF3DF40053893E /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
-		52A9C02527DF41E90053893E /* OXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OXView.swift; sourceTree = "<group>"; };
-		52A9C02B27DF433D0053893E /* UnanimouslyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnanimouslyView.swift; sourceTree = "<group>"; };
-		52A9C03327DF439F0053893E /* ConsonantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantView.swift; sourceTree = "<group>"; };
+		52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSenseQuizScreen.swift; sourceTree = "<group>"; };
+		52A9C02527DF41E90053893E /* OXQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OXQuizScreen.swift; sourceTree = "<group>"; };
+		52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOneMouthScreen.swift; sourceTree = "<group>"; };
+		52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantGameScreen.swift; sourceTree = "<group>"; };
 		52EA013527CE55A200294C48 /* ConversationTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTabView.swift; sourceTree = "<group>"; };
 		52EA013D27CE55D100294C48 /* GameTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabView.swift; sourceTree = "<group>"; };
 		52EA014227CE55FB00294C48 /* GameTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabCard.swift; sourceTree = "<group>"; };
-		52EA014727CE561900294C48 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		52EA014727CE561900294C48 /* BalanceGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceGameScreen.swift; sourceTree = "<group>"; };
 		52EA014C27CE563E00294C48 /* MypageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTabView.swift; sourceTree = "<group>"; };
 		52EA015127CE565F00294C48 /* TestTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabView.swift; sourceTree = "<group>"; };
 		52EE071227E9AE000029A051 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		52EE071727E9AEFB0029A051 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		52EE071E27E9B1450029A051 /* BalanceGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceGame.swift; sourceTree = "<group>"; };
+		52EE071E27E9B1450029A051 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		52EE072627E9B2030029A051 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceGameViewModel.swift; sourceTree = "<group>"; };
 		52EE073427E9B70F0029A051 /* ViewModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBase.swift; sourceTree = "<group>"; };
@@ -153,7 +151,7 @@
 				52EE070C27E9AD9A0029A051 /* Services */,
 				52EE070927E9AD830029A051 /* Models */,
 				52EE070B27E9AD920029A051 /* View Models */,
-				52EE071127E9ADC00029A051 /* Views */,
+				52EE074C27E9CF700029A051 /* View */,
 				52EE071027E9ADBB0029A051 /* Screens */,
 				52EA013027CE551E00294C48 /* fonts */,
 				5206909527CE48FD0057D109 /* HAYApp.swift */,
@@ -191,18 +189,6 @@
 			path = HAYUITests;
 			sourceTree = "<group>";
 		};
-		52A9C02A27DF42B00053893E /* GameView */ = {
-			isa = PBXGroup;
-			children = (
-				52EA014727CE561900294C48 /* BalanceView.swift */,
-				52A9C02027DF3DF40053893E /* CommonView.swift */,
-				52A9C02527DF41E90053893E /* OXView.swift */,
-				52A9C02B27DF433D0053893E /* UnanimouslyView.swift */,
-				52A9C03327DF439F0053893E /* ConsonantView.swift */,
-			);
-			path = GameView;
-			sourceTree = "<group>";
-		};
 		52EA013027CE551E00294C48 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,10 +215,12 @@
 		52EA013327CE555400294C48 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				52A9C02A27DF42B00053893E /* GameView */,
 				52EA013D27CE55D100294C48 /* GameTabView.swift */,
-				52EA014227CE55FB00294C48 /* GameTabCard.swift */,
-				5204844D27D47E1300BBECF9 /* GameModel.swift */,
+				52EA014727CE561900294C48 /* BalanceGameScreen.swift */,
+				52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */,
+				52A9C02527DF41E90053893E /* OXQuizScreen.swift */,
+				52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */,
+				52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -248,7 +236,7 @@
 		52EE070927E9AD830029A051 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				52EE071D27E9B12F0029A051 /* GameModels */,
+				52EE071E27E9B1450029A051 /* GameModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -311,27 +299,28 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		52EE071127E9ADC00029A051 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		52EE071D27E9B12F0029A051 /* GameModels */ = {
-			isa = PBXGroup;
-			children = (
-				52EE071E27E9B1450029A051 /* BalanceGame.swift */,
-			);
-			path = GameModels;
-			sourceTree = "<group>";
-		};
 		52EE072B27E9B6BA0029A051 /* GameViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */,
 			);
 			path = GameViewModels;
+			sourceTree = "<group>";
+		};
+		52EE074C27E9CF700029A051 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52EE074D27E9CF7C0029A051 /* GameView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52EE074D27E9CF7C0029A051 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				52EA014227CE55FB00294C48 /* GameTabCard.swift */,
+			);
+			path = GameView;
 			sourceTree = "<group>";
 		};
 		6948A7D0BD77373F0233F407 /* Pods */ = {
@@ -599,18 +588,17 @@
 				52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */,
 				52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */,
 				5206909627CE48FD0057D109 /* HAYApp.swift in Sources */,
-				5204844E27D47E1300BBECF9 /* GameModel.swift in Sources */,
-				52A9C02C27DF433D0053893E /* UnanimouslyView.swift in Sources */,
+				52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */,
 				52EE071827E9AEFB0029A051 /* Constants.swift in Sources */,
 				525BCA1A27D2054E006C151A /* ContentView.swift in Sources */,
-				52EA014827CE561900294C48 /* BalanceView.swift in Sources */,
+				52EA014827CE561900294C48 /* BalanceGameScreen.swift in Sources */,
 				52EE072D27E9B6D30029A051 /* BalanceGameViewModel.swift in Sources */,
 				52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */,
-				52A9C03427DF439F0053893E /* ConsonantView.swift in Sources */,
-				52A9C02627DF41E90053893E /* OXView.swift in Sources */,
+				52A9C03427DF439F0053893E /* ConsonantGameScreen.swift in Sources */,
+				52A9C02627DF41E90053893E /* OXQuizScreen.swift in Sources */,
 				52EA013627CE55A200294C48 /* ConversationTabView.swift in Sources */,
-				52EE071F27E9B1450029A051 /* BalanceGame.swift in Sources */,
-				52A9C02127DF3DF40053893E /* CommonView.swift in Sources */,
+				52EE071F27E9B1450029A051 /* GameModel.swift in Sources */,
+				52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */,
 				52EA015227CE565F00294C48 /* TestTabView.swift in Sources */,
 				52EA014D27CE563E00294C48 /* MypageTabView.swift in Sources */,
 			);

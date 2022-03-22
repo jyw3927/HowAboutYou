@@ -7,23 +7,10 @@
 
 import SwiftUI
 
-struct GameModel {
-    let name: String
-    let imageUrl: String
-}
-
 struct GameTabView: View {
     
     var title: String
     
-    let gameList : [GameModel] = [
-        GameModel(name: "밸런스게임", imageUrl: "game1"),
-        GameModel(name: "이구동성", imageUrl: "game2"),
-        GameModel(name: "O/X 퀴즈", imageUrl: "game3"),
-        GameModel(name: "상식퀴즈", imageUrl: "game4"),
-        GameModel(name: "아아ㅏ아ㅏ", imageUrl: "game5")
-    ]
-
     var body: some View {
 
             ZStack {
@@ -39,35 +26,24 @@ struct GameTabView: View {
                         .fontWeight(.bold)
                         .padding(.top, 12.0)
                     
-                    
-//                    List(gameList, id: \.name) { item in NavigationLink(
-//                        destination: BalanceView(title: item.name),
-//                        label: {
-//                            GameTabCard(imageURL: item.imageUrl, gameName: item.name) })}
-//                        .listRowBackground(Color.green)
-//                        .onAppear() {
-//                                          UITableView.appearance().backgroundColor = UIColor.clear
-//                                          UITableViewCell.appearance().backgroundColor = UIColor.clear
-//                                      }
-                    
                     ScrollView {
-                        NavigationLink(destination: BalanceView(title: "밸런스게임"), label: {
+                        NavigationLink(destination: BalanceGameScreen(), label: {
                             GameTabCard(imageURL: "game1", gameName: "밸런스게임").padding([.top, .leading, .trailing], 15)
                         })
 
-                        NavigationLink(destination: UnanimouslyView(title: "이구동성"), label: {
+                        NavigationLink(destination: WithOneMouthScreen(), label: {
                             GameTabCard(imageURL: "game2", gameName: "이구동성").padding([.top, .leading, .trailing], 15)
                         })
 
-                        NavigationLink(destination: OXView(title: "O/X 퀴즈"), label: {
+                        NavigationLink(destination: OXQuizScreen(), label: {
                             GameTabCard(imageURL: "game3", gameName: "O/X 퀴즈").padding([.top, .leading, .trailing], 15)
                         })
 
-                        NavigationLink(destination: CommonView(title: "상식퀴즈"), label: {
+                        NavigationLink(destination: CommonSenseQuizScreen(), label: {
                             GameTabCard(imageURL: "game4", gameName: "상식퀴즈").padding([.top, .leading, .trailing], 15)
                         })
 
-                        NavigationLink(destination: ConsonantView(title: "초성게임"), label: {
+                        NavigationLink(destination: ConsonantGameScreen(), label: {
                             GameTabCard(imageURL: "game5", gameName: "초성퀴즈").padding(15)
                         })
                     }

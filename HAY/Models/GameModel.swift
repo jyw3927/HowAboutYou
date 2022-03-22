@@ -8,7 +8,7 @@
 import Foundation
 
 struct BalanceGame: Codable {
-    let id: String
+    let id: Int
     let firstChoice: String
     let secondChoice: String
     

@@ -8,18 +8,39 @@
 import Foundation
 import SwiftUI
 
-class BalanceGameViewModel: ViewModelBase {
+class BalanceGameViewModel: ObservableObject {
     
-//    let balance = BalanceGame
-//    
-//    
-//    
-//    @Published var balance = BalanceGameViewModel.self
-//    let httpClient = HTTPClient()
-//    
-//    func getBalanceGameRandomly() {
-//        httpClient.
-//    }
+    @Published var balance: BalanceGame?
+    var httpClient = HTTPClient()
+    
+    init(balance: BalanceGame? = nil) {
+        self.balance = balance
+    }
+    
+    func getBalanceGameRandomly() {
+        httpClient.getBalanceGame() { result in
+            switch result {
+                case .success(let game):
+                    DispatchQueue.main.async {
+                        self.balance = game
+                    }
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    var id: Int {
+        self.balance?.id ?? 0
+    }
+    
+    var firstChoice: String {
+        self.balance?.firstChoice ?? ""
+    }
+    
+    var secondChoice: String {
+        self.balance?.secondChoice ?? ""
+    }
     
 }
-
