@@ -13,6 +13,13 @@ struct ConsonantGameScreen: View {
     
     @State
     private var isAnswerTapped: Bool = false
+    
+    @ObservedObject private var consonantGameVM: ConsonantGameViewModel
+    
+    init() {
+        self.consonantGameVM = ConsonantGameViewModel()
+        consonantGameVM.getConsonantGameRandomly()
+    }
 
     var body: some View {
             
@@ -43,8 +50,10 @@ struct ConsonantGameScreen: View {
                         Rectangle().frame(width: 300, height: 300, alignment: .center).foregroundColor(isAnswerTapped ? Color("SecondaryColor") : Color("EnabledColor"))
                         .cornerRadius(20)
                         
-                        Text(isAnswerTapped ? "홍수  홍삼  황사  한숨\n행사  하수  현실  혜성\n홀수  헬스  환상  허세\n하사  휴식  형상  훈수\n\n등등" : "ㅎㅅ").font(.system(size: 30)).fontWeight(.bold)
+                        Text(isAnswerTapped ? self.consonantGameVM.example : self.consonantGameVM.question).font(.system(size: 30)).fontWeight(.bold)
+                            .frame(width: 280, height: 300, alignment: .center)
                             .multilineTextAlignment(.center)
+                            .minimumScaleFactor(0.5)
                     }.padding(.bottom, 30.0)
                         .onTapGesture {
                             self.isAnswerTapped.toggle()
@@ -54,19 +63,29 @@ struct ConsonantGameScreen: View {
                         .frame(height: 50)
                     
                     HStack {
-                        ZStack {
-                            Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                            
-                            Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
-                        }
+                        Button(action: {
+                            self.consonantGameVM.getConsonantGameRandomly()
+                        }, label: {
+                            ZStack {
+                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
+                                
+                                Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
+                                    .foregroundColor(.black)
+                            }
+                        })
                         
                         Spacer()
                         
-                        ZStack {
-                            Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                            
-                            Image(systemName: "arrow.right").resizable().frame(width: 20, height: 20)
-                        }
+                        Button(action: {
+                            self.consonantGameVM.getConsonantGameRandomly()
+                        }, label: {
+                            ZStack {
+                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
+                                
+                                Image(systemName: "arrow.right").resizable().frame(width: 20, height: 20)
+                                    .foregroundColor(.black)
+                            }
+                        })
                         
                     }.padding(.horizontal, 50)
                     
