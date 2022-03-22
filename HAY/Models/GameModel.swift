@@ -20,7 +20,7 @@ struct BalanceGame: Codable {
     
 }
 
-struct WithOneMouthGame: Codable {
+struct WithOneMouth: Codable {
     let id: Int
     let firstChoice: String
     let secondChoice: String

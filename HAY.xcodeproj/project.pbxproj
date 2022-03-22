@@ -29,6 +29,10 @@
 		52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE072627E9B2030029A051 /* HTTPClient.swift */; };
 		52EE072D27E9B6D30029A051 /* BalanceGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */; };
 		52EE073527E9B70F0029A051 /* ViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE073427E9B70F0029A051 /* ViewModelBase.swift */; };
+		52EE077227E9D61A0029A051 /* WithOneMouthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE077127E9D61A0029A051 /* WithOneMouthViewModel.swift */; };
+		52EE077727E9D6270029A051 /* OXQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE077627E9D6270029A051 /* OXQuizViewModel.swift */; };
+		52EE077C27E9D6340029A051 /* CommonSenseQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE077B27E9D6340029A051 /* CommonSenseQuizViewModel.swift */; };
+		52EE078127E9D6440029A051 /* ConsonantGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE078027E9D6440029A051 /* ConsonantGameViewModel.swift */; };
 		924C364C28344B0C161BF132 /* Pods_HAY_HAYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */; };
 		CDBE73CBAF80C390FF4FC9EA /* Pods_HAYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D973F7C021E73B7ADBD4D /* Pods_HAYTests.framework */; };
 		FE1B2152FAD00F6659C3CB5F /* Pods_HAY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356A8D1572975D8242A9B1D1 /* Pods_HAY.framework */; };
@@ -87,6 +91,10 @@
 		52EE072627E9B2030029A051 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceGameViewModel.swift; sourceTree = "<group>"; };
 		52EE073427E9B70F0029A051 /* ViewModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBase.swift; sourceTree = "<group>"; };
+		52EE077127E9D61A0029A051 /* WithOneMouthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOneMouthViewModel.swift; sourceTree = "<group>"; };
+		52EE077627E9D6270029A051 /* OXQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OXQuizViewModel.swift; sourceTree = "<group>"; };
+		52EE077B27E9D6340029A051 /* CommonSenseQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSenseQuizViewModel.swift; sourceTree = "<group>"; };
+		52EE078027E9D6440029A051 /* ConsonantGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantGameViewModel.swift; sourceTree = "<group>"; };
 		5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAY_HAYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD5C3BA5E8FEFF3B74B9545 /* Pods-HAY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY.release.xcconfig"; path = "Target Support Files/Pods-HAY/Pods-HAY.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,6 +311,10 @@
 			isa = PBXGroup;
 			children = (
 				52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */,
+				52EE077127E9D61A0029A051 /* WithOneMouthViewModel.swift */,
+				52EE077627E9D6270029A051 /* OXQuizViewModel.swift */,
+				52EE077B27E9D6340029A051 /* CommonSenseQuizViewModel.swift */,
+				52EE078027E9D6440029A051 /* ConsonantGameViewModel.swift */,
 			);
 			path = GameViewModels;
 			sourceTree = "<group>";
@@ -587,17 +599,21 @@
 				52EA013E27CE55D100294C48 /* GameTabView.swift in Sources */,
 				52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */,
 				52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */,
+				52EE077C27E9D6340029A051 /* CommonSenseQuizViewModel.swift in Sources */,
 				5206909627CE48FD0057D109 /* HAYApp.swift in Sources */,
 				52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */,
 				52EE071827E9AEFB0029A051 /* Constants.swift in Sources */,
 				525BCA1A27D2054E006C151A /* ContentView.swift in Sources */,
+				52EE077227E9D61A0029A051 /* WithOneMouthViewModel.swift in Sources */,
 				52EA014827CE561900294C48 /* BalanceGameScreen.swift in Sources */,
 				52EE072D27E9B6D30029A051 /* BalanceGameViewModel.swift in Sources */,
 				52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */,
 				52A9C03427DF439F0053893E /* ConsonantGameScreen.swift in Sources */,
+				52EE078127E9D6440029A051 /* ConsonantGameViewModel.swift in Sources */,
 				52A9C02627DF41E90053893E /* OXQuizScreen.swift in Sources */,
 				52EA013627CE55A200294C48 /* ConversationTabView.swift in Sources */,
 				52EE071F27E9B1450029A051 /* GameModel.swift in Sources */,
+				52EE077727E9D6270029A051 /* OXQuizViewModel.swift in Sources */,
 				52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */,
 				52EA015227CE565F00294C48 /* TestTabView.swift in Sources */,
 				52EA014D27CE563E00294C48 /* MypageTabView.swift in Sources */,
