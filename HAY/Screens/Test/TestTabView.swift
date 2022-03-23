@@ -11,6 +11,11 @@ struct TestTabView: View {
     
     var title: String
     
+    let columns: [GridItem] = [
+            GridItem(.flexible(), spacing: -10),
+            GridItem(.flexible(), spacing: -10),
+        ]
+    
     var body: some View {
         
         ZStack {
@@ -26,7 +31,52 @@ struct TestTabView: View {
                     .fontWeight(.bold)
                     .padding(.top, 12.0)
                 
-                Spacer()
+                Spacer(minLength: 30)
+                
+                ScrollView {
+                    
+                    LazyVGrid(
+                        columns: columns,
+                        alignment: .center,
+                        spacing: 20,
+                        pinnedViews: [],
+                        content: {
+                            
+                            NavigationLink(destination: BalanceGameScreen(), label: {
+                                TestTabCard(imageURL: "game1", testName: "MBTI")
+                            })
+                            
+                            NavigationLink(destination: BalanceGameScreen(), label: {
+                                TestTabCard(imageURL: "game1", testName: "에고그램 테스트")
+                            })
+                            
+                            NavigationLink(destination: BalanceGameScreen(), label: {
+                                TestTabCard(imageURL: "game1", testName: "mgram")
+                            })
+                            
+                            NavigationLink(destination: BalanceGameScreen(), label: {
+                                TestTabCard(imageURL: "game1", testName: "애착유형 테스트")
+                            })
+                            
+                            NavigationLink(destination: BalanceGameScreen(), label: {
+                                TestTabCard(imageURL: "game1", testName: "EQ 테스트")
+                            })
+                            
+                            NavigationLink(destination: BalanceGameScreen(), label: {
+                                TestTabCard(imageURL: "game1", testName: "연애 능력 테스트")
+                            })
+                            
+                            NavigationLink(destination: BalanceGameScreen(), label: {
+                                TestTabCard(imageURL: "game1", testName: "연락 유형 테스트")
+                            })
+                            
+                            NavigationLink(destination: BalanceGameScreen(), label: {
+                                TestTabCard(imageURL: "game1", testName: "결혼 상대 테스트")
+                            })
+                            
+                        }) // LazyVGrid
+                    
+                } // ScrollView
             } // VStack
             
         } // ZStack
@@ -35,3 +85,10 @@ struct TestTabView: View {
         
     }
 }
+
+struct TestTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        TestTabView(title: "심리테스트")
+    }
+}
+
