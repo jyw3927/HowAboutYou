@@ -13,6 +13,7 @@
 		520690A827CE49000057D109 /* HAYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520690A727CE49000057D109 /* HAYTests.swift */; };
 		520690B327CE49000057D109 /* HAYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520690B227CE49000057D109 /* HAYUITests.swift */; };
 		525BCA1A27D2054E006C151A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCA1927D2054E006C151A /* ContentView.swift */; };
+		5286406027EB24A100284229 /* TestTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286405F27EB24A100284229 /* TestTabCard.swift */; };
 		52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */; };
 		52A9C02627DF41E90053893E /* OXQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02527DF41E90053893E /* OXQuizScreen.swift */; };
 		52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */; };
@@ -75,6 +76,7 @@
 		520690B227CE49000057D109 /* HAYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAYUITests.swift; sourceTree = "<group>"; };
 		520690B427CE49000057D109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525BCA1927D2054E006C151A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5286405F27EB24A100284229 /* TestTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabCard.swift; sourceTree = "<group>"; };
 		52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSenseQuizScreen.swift; sourceTree = "<group>"; };
 		52A9C02527DF41E90053893E /* OXQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OXQuizScreen.swift; sourceTree = "<group>"; };
 		52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOneMouthScreen.swift; sourceTree = "<group>"; };
@@ -154,13 +156,13 @@
 			children = (
 				52EE070A27E9AD890029A051 /* Utils */,
 				52EE070F27E9ADB50029A051 /* Extensions */,
-				52EE070E27E9ADAF0029A051 /* Controls */,
-				52EE070D27E9ADA90029A051 /* Loaders */,
 				52EE070C27E9AD9A0029A051 /* Services */,
 				52EE070927E9AD830029A051 /* Models */,
 				52EE070B27E9AD920029A051 /* View Models */,
 				52EE074C27E9CF700029A051 /* View */,
 				52EE071027E9ADBB0029A051 /* Screens */,
+				52EE070E27E9ADAF0029A051 /* Controls */,
+				52EE070D27E9ADA90029A051 /* Loaders */,
 				52EA013027CE551E00294C48 /* fonts */,
 				5206909527CE48FD0057D109 /* HAYApp.swift */,
 				5206909927CE49000057D109 /* Assets.xcassets */,
@@ -195,6 +197,14 @@
 				520690B427CE49000057D109 /* Info.plist */,
 			);
 			path = HAYUITests;
+			sourceTree = "<group>";
+		};
+		5286405E27EB247400284229 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				5286405F27EB24A100284229 /* TestTabCard.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		52EA013027CE551E00294C48 /* fonts */ = {
@@ -322,17 +332,18 @@
 		52EE074C27E9CF700029A051 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				52EE074D27E9CF7C0029A051 /* GameView */,
+				52EE074D27E9CF7C0029A051 /* Game */,
+				5286405E27EB247400284229 /* Test */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		52EE074D27E9CF7C0029A051 /* GameView */ = {
+		52EE074D27E9CF7C0029A051 /* Game */ = {
 			isa = PBXGroup;
 			children = (
 				52EA014227CE55FB00294C48 /* GameTabCard.swift */,
 			);
-			path = GameView;
+			path = Game;
 			sourceTree = "<group>";
 		};
 		6948A7D0BD77373F0233F407 /* Pods */ = {
@@ -598,6 +609,7 @@
 				52EE073527E9B70F0029A051 /* ViewModelBase.swift in Sources */,
 				52EA013E27CE55D100294C48 /* GameTabView.swift in Sources */,
 				52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */,
+				5286406027EB24A100284229 /* TestTabCard.swift in Sources */,
 				52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */,
 				52EE077C27E9D6340029A051 /* CommonSenseQuizViewModel.swift in Sources */,
 				5206909627CE48FD0057D109 /* HAYApp.swift in Sources */,
