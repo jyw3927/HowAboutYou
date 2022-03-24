@@ -12,6 +12,7 @@
 		5206909D27CE49000057D109 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206909C27CE49000057D109 /* Preview Assets.xcassets */; };
 		520690A827CE49000057D109 /* HAYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520690A727CE49000057D109 /* HAYTests.swift */; };
 		520690B327CE49000057D109 /* HAYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520690B227CE49000057D109 /* HAYUITests.swift */; };
+		5224399927EC0C240061BFC2 /* TestWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224399827EC0C240061BFC2 /* TestWebView.swift */; };
 		525BCA1A27D2054E006C151A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCA1927D2054E006C151A /* ContentView.swift */; };
 		5286406027EB24A100284229 /* TestTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286405F27EB24A100284229 /* TestTabCard.swift */; };
 		52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */; };
@@ -75,6 +76,7 @@
 		520690AE27CE49000057D109 /* HAYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HAYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		520690B227CE49000057D109 /* HAYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAYUITests.swift; sourceTree = "<group>"; };
 		520690B427CE49000057D109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5224399827EC0C240061BFC2 /* TestWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWebView.swift; sourceTree = "<group>"; };
 		525BCA1927D2054E006C151A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5286405F27EB24A100284229 /* TestTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabCard.swift; sourceTree = "<group>"; };
 		52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSenseQuizScreen.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				5286405F27EB24A100284229 /* TestTabCard.swift */,
+				5224399827EC0C240061BFC2 /* TestWebView.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -619,6 +622,7 @@
 				52EE077227E9D61A0029A051 /* WithOneMouthViewModel.swift in Sources */,
 				52EA014827CE561900294C48 /* BalanceGameScreen.swift in Sources */,
 				52EE072D27E9B6D30029A051 /* BalanceGameViewModel.swift in Sources */,
+				5224399927EC0C240061BFC2 /* TestWebView.swift in Sources */,
 				52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */,
 				52A9C03427DF439F0053893E /* ConsonantGameScreen.swift in Sources */,
 				52EE078127E9D6440029A051 /* ConsonantGameViewModel.swift in Sources */,

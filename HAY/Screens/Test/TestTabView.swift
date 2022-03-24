@@ -42,35 +42,35 @@ struct TestTabView: View {
                         pinnedViews: [],
                         content: {
                             
-                            NavigationLink(destination: BalanceGameScreen(), label: {
+                            NavigationLink(destination: TestWebView(urlToLoad: "https://www.16personalities.com/ko/무료-성격-유형-검사"), label: {
                                 TestTabCard(imageURL: "game1", testName: "MBTI")
                             })
                             
-                            NavigationLink(destination: BalanceGameScreen(), label: {
+                            NavigationLink(destination: TestWebView(urlToLoad: "http://ego.na.to/test/ego/"), label: {
                                 TestTabCard(imageURL: "game1", testName: "에고그램 테스트")
                             })
                             
-                            NavigationLink(destination: BalanceGameScreen(), label: {
+                            NavigationLink(destination: TestWebView(urlToLoad: "https://mgram.me/ko/"), label: {
                                 TestTabCard(imageURL: "game1", testName: "mgram")
                             })
                             
-                            NavigationLink(destination: BalanceGameScreen(), label: {
+                            NavigationLink(destination: TestWebView(urlToLoad: "http://typer.kr/test/ecr/"), label: {
                                 TestTabCard(imageURL: "game1", testName: "애착유형 테스트")
                             })
                             
-                            NavigationLink(destination: BalanceGameScreen(), label: {
+                            NavigationLink(destination: TestWebView(urlToLoad: "https://eqtest.kr/"), label: {
                                 TestTabCard(imageURL: "game1", testName: "EQ 테스트")
                             })
                             
-                            NavigationLink(destination: BalanceGameScreen(), label: {
+                            NavigationLink(destination: TestWebView(urlToLoad: "https://www.banggooso.com/gl/1002/"), label: {
                                 TestTabCard(imageURL: "game1", testName: "연애 능력 테스트")
                             })
                             
-                            NavigationLink(destination: BalanceGameScreen(), label: {
+                            NavigationLink(destination: TestWebView(urlToLoad: "https://type-of-contact.netlify.app/"), label: {
                                 TestTabCard(imageURL: "game1", testName: "연락 유형 테스트")
                             })
                             
-                            NavigationLink(destination: BalanceGameScreen(), label: {
+                            NavigationLink(destination: TestWebView(urlToLoad: "https://www.simcong.com/quiz/349"), label: {
                                 TestTabCard(imageURL: "game1", testName: "결혼 상대 테스트")
                             })
                             
