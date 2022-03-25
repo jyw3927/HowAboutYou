@@ -23,37 +23,37 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
-        
+          
             NavigationView {
-                
+
                 TabView(selection: $selection) {
-                    
+
                     GameTabView(title: "게임")
                         .tabItem {
-                            
+
                             selection == 0 ? Image("game_active") : Image("game")
-                            
+
                             Text("게임")
                         }
                         .tag(0)
-                    
+
                     TestTabView(title: "심리테스트")
                         .tabItem {
-                            
+
                             selection == 1 ? Image("test_active") : Image("test")
-                            
+
                             Text("심리테스트")
                         }
                         .tag(1)
-                    
-    //                ConversationTabView(title: "대화")
-    //                    .tabItem {
-    //
-    //                        selection == 2 ? Image("conversation_active") : Image("conversation")
-    //
-    //                        Text("대화")
-    //                    }
-    //                    .tag(2)
+
+//                    ConversationTabView(title: "대화")
+//                        .tabItem {
+//
+//                            selection == 2 ? Image("conversation_active") : Image("conversation")
+//
+//                            Text("대화")
+//                        }
+//                        .tag(2)
     //
     //                MypageTabView(title: "마이페이지")
     //                    .tabItem {
@@ -63,12 +63,12 @@ struct ContentView: View {
     //                        Text("마이페이지")
     //                    }
     //                    .tag(3)
-                    
+
                 } // TabView
                 .accentColor(Color("EnabledColor"))
                 .navigationTitle("")
                 .navigationBarHidden(true)
-                
+
             }.zIndex(0) // NavigationView
             
             if isLoading {
