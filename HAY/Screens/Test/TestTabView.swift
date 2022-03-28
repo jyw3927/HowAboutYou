@@ -46,6 +46,10 @@ struct TestTabView: View {
                                 TestTabCard(imageURL: "MBTI", testName: "MBTI")
                             })
                             
+                            NavigationLink(destination: TestWebView(urlToEncode: "http://typer.kr/test/ecr/"), label: {
+                                TestTabCard(imageURL: "Attach", testName: "애착유형")
+                            })
+                            
                             NavigationLink(destination: TestWebView(urlToEncode: "http://ego.na.to/test/ego/"), label: {
                                 TestTabCard(imageURL: "EgoGram", testName: "에고그램 테스트")
                             })
@@ -54,24 +58,20 @@ struct TestTabView: View {
                                 TestTabCard(imageURL: "MGram", testName: "mgram")
                             })
 
-                            NavigationLink(destination: TestWebView(urlToEncode: "http://typer.kr/test/ecr/"), label: {
-                                TestTabCard(imageURL: "Attach", testName: "애착유형 테스트")
-                            })
-
                             NavigationLink(destination: TestWebView(urlToEncode: "https://eqtest.kr/"), label: {
                                 TestTabCard(imageURL: "EQTest", testName: "EQ 테스트")
                             })
-
-                            NavigationLink(destination: TestWebView(urlToEncode: "https://www.banggooso.com/gl/1002/"), label: {
-                                TestTabCard(imageURL: "Date", testName: "연애 능력 테스트")
+                            
+                            NavigationLink(destination: TestWebView(urlToEncode: "https://www.simcong.com/quiz/349"), label: {
+                                TestTabCard(imageURL: "Marry", testName: "결혼 상대 테스트")
                             })
-
+                            
                             NavigationLink(destination: TestWebView(urlToEncode: "https://type-of-contact.netlify.app/"), label: {
                                 TestTabCard(imageURL: "Contact", testName: "연락 유형 테스트")
                             })
 
-                            NavigationLink(destination: TestWebView(urlToEncode: "https://www.simcong.com/quiz/349"), label: {
-                                TestTabCard(imageURL: "Marry", testName: "결혼 상대 테스트")
+                            NavigationLink(destination: TestWebView(urlToEncode: "https://www.banggooso.com/gl/1002/"), label: {
+                                TestTabCard(imageURL: "Date", testName: "연애 능력 테스트")
                             })
                             
                         }) // LazyVGrid
