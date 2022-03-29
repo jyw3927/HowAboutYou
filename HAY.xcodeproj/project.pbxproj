@@ -13,6 +13,8 @@
 		520690A827CE49000057D109 /* HAYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520690A727CE49000057D109 /* HAYTests.swift */; };
 		520690B327CE49000057D109 /* HAYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520690B227CE49000057D109 /* HAYUITests.swift */; };
 		5224399927EC0C240061BFC2 /* TestWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224399827EC0C240061BFC2 /* TestWebView.swift */; };
+		522D5CE327F36AAE00A37E3A /* ConversationTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D5CE227F36AAE00A37E3A /* ConversationTabCard.swift */; };
+		522D5CEB27F36CBD00A37E3A /* PolygonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D5CEA27F36CBD00A37E3A /* PolygonShape.swift */; };
 		525BCA1A27D2054E006C151A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCA1927D2054E006C151A /* ContentView.swift */; };
 		5286406027EB24A100284229 /* TestTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286405F27EB24A100284229 /* TestTabCard.swift */; };
 		52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */; };
@@ -77,6 +79,8 @@
 		520690B227CE49000057D109 /* HAYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAYUITests.swift; sourceTree = "<group>"; };
 		520690B427CE49000057D109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5224399827EC0C240061BFC2 /* TestWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWebView.swift; sourceTree = "<group>"; };
+		522D5CE227F36AAE00A37E3A /* ConversationTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTabCard.swift; sourceTree = "<group>"; };
+		522D5CEA27F36CBD00A37E3A /* PolygonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonShape.swift; sourceTree = "<group>"; };
 		525BCA1927D2054E006C151A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5286405F27EB24A100284229 /* TestTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabCard.swift; sourceTree = "<group>"; };
 		52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSenseQuizScreen.swift; sourceTree = "<group>"; };
@@ -199,6 +203,15 @@
 				520690B427CE49000057D109 /* Info.plist */,
 			);
 			path = HAYUITests;
+			sourceTree = "<group>";
+		};
+		522D5CE127F36A9B00A37E3A /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				522D5CE227F36AAE00A37E3A /* ConversationTabCard.swift */,
+				522D5CEA27F36CBD00A37E3A /* PolygonShape.swift */,
+			);
+			path = Conversation;
 			sourceTree = "<group>";
 		};
 		5286405E27EB247400284229 /* Test */ = {
@@ -335,6 +348,7 @@
 		52EE074C27E9CF700029A051 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				522D5CE127F36A9B00A37E3A /* Conversation */,
 				52EE074D27E9CF7C0029A051 /* Game */,
 				5286405E27EB247400284229 /* Test */,
 			);
@@ -609,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522D5CE327F36AAE00A37E3A /* ConversationTabCard.swift in Sources */,
 				52EE073527E9B70F0029A051 /* ViewModelBase.swift in Sources */,
 				52EA013E27CE55D100294C48 /* GameTabView.swift in Sources */,
 				52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */,
@@ -631,6 +646,7 @@
 				52EE071F27E9B1450029A051 /* GameModel.swift in Sources */,
 				52EE077727E9D6270029A051 /* OXQuizViewModel.swift in Sources */,
 				52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */,
+				522D5CEB27F36CBD00A37E3A /* PolygonShape.swift in Sources */,
 				52EA015227CE565F00294C48 /* TestTabView.swift in Sources */,
 				52EA014D27CE563E00294C48 /* MypageTabView.swift in Sources */,
 			);
