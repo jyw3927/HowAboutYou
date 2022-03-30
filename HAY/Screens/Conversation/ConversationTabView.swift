@@ -32,19 +32,19 @@ struct ConversationTabView: View {
                                 
                         ConversationTabCard(topic: "가족", x: 100, y: 100)
                         
-                        ConversationTabCard(topic: "너", x: Int(zgio.size.width) - 100, y: 100)
+                        ConversationTabCard(topic: "너", x: Int(zgio.size.width) - 100, y: Int(zgio.size.height) / 8)
                         
                         ConversationTabCard(topic: "나", x: Int(zgio.size.width) / 2, y: Int(zgio.size.height) / 4)
                         
-                        ConversationTabCard(topic: "상상", x: Int(zgio.size.width) - 100, y: 300)
+                        ConversationTabCard(topic: "상상", x: Int(zgio.size.width) - 100, y: Int(zgio.size.height) / 4 + 100)
                         
                         ConversationTabCard(topic: "일상", x: Int(zgio.size.width) / 2, y: Int(zgio.size.height) / 2)
                         
-                        ConversationTabCard(topic: "과거", x: 100, y: 500)
+                        ConversationTabCard(topic: "과거", x: 100, y: Int(zgio.size.height) / 2 + 100)
                         
-                        ConversationTabCard(topic: "미래", x: Int(zgio.size.width) / 2, y: 600)
+                        ConversationTabCard(topic: "미래", x: Int(zgio.size.width) / 2, y: Int(zgio.size.height) / 2 + 200)
                         
-                        ConversationTabCard(topic: "상상", x: Int(zgio.size.width) - 100, y: 700)
+                        ConversationTabCard(topic: "상상", x: Int(zgio.size.width) - 100, y: Int(zgio.size.height) - 100)
                                 
                     }.frame(width: 550, height: 800)
                 
