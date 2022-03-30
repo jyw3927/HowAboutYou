@@ -15,6 +15,7 @@
 		5224399927EC0C240061BFC2 /* TestWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224399827EC0C240061BFC2 /* TestWebView.swift */; };
 		522D5CE327F36AAE00A37E3A /* ConversationTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D5CE227F36AAE00A37E3A /* ConversationTabCard.swift */; };
 		522D5CEB27F36CBD00A37E3A /* PolygonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D5CEA27F36CBD00A37E3A /* PolygonShape.swift */; };
+		522D5CF327F45E6F00A37E3A /* ConversationContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D5CF227F45E6F00A37E3A /* ConversationContentScreen.swift */; };
 		525BCA1A27D2054E006C151A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCA1927D2054E006C151A /* ContentView.swift */; };
 		5286406027EB24A100284229 /* TestTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286405F27EB24A100284229 /* TestTabCard.swift */; };
 		52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */; };
@@ -81,6 +82,7 @@
 		5224399827EC0C240061BFC2 /* TestWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWebView.swift; sourceTree = "<group>"; };
 		522D5CE227F36AAE00A37E3A /* ConversationTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTabCard.swift; sourceTree = "<group>"; };
 		522D5CEA27F36CBD00A37E3A /* PolygonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonShape.swift; sourceTree = "<group>"; };
+		522D5CF227F45E6F00A37E3A /* ConversationContentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationContentScreen.swift; sourceTree = "<group>"; };
 		525BCA1927D2054E006C151A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5286405F27EB24A100284229 /* TestTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabCard.swift; sourceTree = "<group>"; };
 		52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSenseQuizScreen.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				52EA013527CE55A200294C48 /* ConversationTabView.swift */,
+				522D5CF227F45E6F00A37E3A /* ConversationContentScreen.swift */,
 			);
 			path = Conversation;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				52EA013E27CE55D100294C48 /* GameTabView.swift in Sources */,
 				52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */,
 				5286406027EB24A100284229 /* TestTabCard.swift in Sources */,
+				522D5CF327F45E6F00A37E3A /* ConversationContentScreen.swift in Sources */,
 				52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */,
 				52EE077C27E9D6340029A051 /* CommonSenseQuizViewModel.swift in Sources */,
 				5206909627CE48FD0057D109 /* HAYApp.swift in Sources */,
