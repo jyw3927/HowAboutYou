@@ -20,9 +20,7 @@ struct TestTabScreen: View {
         
         ZStack {
             
-            LinearGradient(gradient: Gradient(colors: [Color("PrimaryColor"), Color("SubPrimaryColor")]),
-                            startPoint: .top, endPoint: .bottom)
-            .edgesIgnoringSafeArea(.all)
+            BGColorView()
             
             VStack {
                 

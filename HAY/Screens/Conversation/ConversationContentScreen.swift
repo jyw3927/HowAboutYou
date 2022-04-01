@@ -20,13 +20,9 @@ struct ConversationContentScreen: View {
 
     var body: some View {
             
-            ZStack
-//        (alignment: .topLeading)
-        {
+            ZStack(alignment: .topLeading) {
                 
-                LinearGradient(gradient: Gradient(colors: [Color("PrimaryColor"), Color("SubPrimaryColor")]),
-                                startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
+                BGColorView()
                 
                 VStack (alignment: .center) {
                     
@@ -78,6 +74,7 @@ struct ConversationContentScreen: View {
                     Spacer()
                     
                 } // VStack
+                .frame(width: Constants.screenWidth)
                 
 //                Button(action: {
 //                           presentationMode.wrappedValue.dismiss()

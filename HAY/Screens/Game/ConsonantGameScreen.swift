@@ -25,9 +25,7 @@ struct ConsonantGameScreen: View {
             
             ZStack (alignment: .topLeading) {
                 
-                LinearGradient(gradient: Gradient(colors: [Color("PrimaryColor"), Color("SubPrimaryColor")]),
-                                startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
+                BGColorView()
                 
                 VStack {
                     
