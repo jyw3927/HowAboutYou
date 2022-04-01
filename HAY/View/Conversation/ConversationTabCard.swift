@@ -23,6 +23,7 @@ struct ConversationTabCard: View {
 
             Text(topic)
                 .font(.system(size: 40, weight: .bold))
+                .foregroundColor(.black)
                 .position(CGPoint(x: x, y: y))
                 .zIndex(1)
 

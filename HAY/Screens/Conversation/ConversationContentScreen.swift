@@ -46,10 +46,10 @@ struct ConversationContentScreen: View {
                             Text("당신의 어릴 시절 꿈은\n      무엇이었나요?").font(.system(size: 30)).fontWeight(.bold)
                             
                         } // VStack
-                        .padding(.trailing, 30)
+                        .padding(.trailing, 20)
                         
                     } // ZStack
-                    .padding(.leading, 30)
+                    .padding(.leading, 20)
                     
                     Spacer()
                     
@@ -76,14 +76,14 @@ struct ConversationContentScreen: View {
                 } // VStack
                 .frame(width: Constants.screenWidth)
                 
-//                Button(action: {
-//                           presentationMode.wrappedValue.dismiss()
-//                       }, label: {
-//                           Image(systemName: "chevron.left")
-//                               .imageScale(.large)
-//                               .padding()
-//                       })
-//                       .accentColor(Color("EnabledColor"))
+                Button(action: {
+                           presentationMode.wrappedValue.dismiss()
+                       }, label: {
+                           Image(systemName: "chevron.left")
+                               .imageScale(.large)
+                               .padding()
+                       })
+                       .accentColor(Color("EnabledColor"))
                 
             } // ZStack
             .navigationTitle(title)
