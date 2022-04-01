@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TestTabView: View {
+struct TestTabScreen: View {
     
     var title: String
     
@@ -83,12 +83,6 @@ struct TestTabView: View {
         .navigationTitle("")
         .navigationBarHidden(true)
         
-    }
-}
-
-struct TestTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        TestTabView(title: "심리테스트")
     }
 }
 

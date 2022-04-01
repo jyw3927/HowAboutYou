@@ -72,45 +72,26 @@ struct WithOneMouthScreen: View {
                             .frame(width: 300, height: 200, alignment: .center)
                             .minimumScaleFactor(0.5)
                     }.padding(.bottom, 30.0)
-                        .onTapGesture {
-                            self.isSecondItemTapped.toggle()
-                            
-                            if (isFirstItemTapped) {
-                                self.isFirstItemTapped.toggle()
-                            }
+                    .onTapGesture {
+                        self.isSecondItemTapped.toggle()
+                        
+                        if (isFirstItemTapped) {
+                            self.isFirstItemTapped.toggle()
                         }
+                    }
                     
-                    HStack {
-                        Button(action: {
-                            self.withOneMouthVM.getWithOneMouthRandomly()
-                            self.isFirstItemTapped = false
-                            self.isSecondItemTapped = false
-                        }, label: {
-                            ZStack {
-                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                                
-                                Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
-                                    .foregroundColor(.black)
-                            }
-                        })
-                        
-                        
-                        Spacer()
-                        
-                        Button(action: {
-                            self.withOneMouthVM.getWithOneMouthRandomly()
-                            self.isFirstItemTapped = false
-                            self.isSecondItemTapped = false
-                        }, label: {
-                            ZStack {
-                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                                
-                                Image(systemName: "arrow.right").resizable().frame(width: 20, height: 20)
-                                    .foregroundColor(.black)
-                            }
-                        })
-                        
-                    }.padding(.horizontal, 50)
+                    Button(action: {
+                        self.withOneMouthVM.getWithOneMouthRandomly()
+                        self.isFirstItemTapped = false
+                        self.isSecondItemTapped = false
+                    }, label: {
+                        ZStack {
+                            Rectangle().frame(width: 140, height: 50, alignment: .center).foregroundColor(Color("SecondaryColor"))
+                            .cornerRadius(20)
+
+                            Text("랜덤섞기").font(.system(size: 22)).fontWeight(.bold).foregroundColor(.black)
+                        }.padding(.vertical, 30)
+                    })
                     
 //                    ZStack {
 //                        Rectangle().frame(width: 140, height: 50, alignment: .center).foregroundColor(Color("SecondaryColor"))
@@ -122,6 +103,7 @@ struct WithOneMouthScreen: View {
                     Spacer()
                     
                 } // VStack
+                .frame(width: Constants.screenWidth)
                 
                 Button(action: {
                            presentationMode.wrappedValue.dismiss()

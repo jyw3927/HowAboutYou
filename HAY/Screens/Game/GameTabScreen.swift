@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GameTabView: View {
+struct GameTabScreen: View {
     
     var title: String
     
@@ -54,11 +54,5 @@ struct GameTabView: View {
             .navigationTitle("")
             .navigationBarHidden(true)
             
-    }
-}
-
-struct GameTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameTabView(title: "Hello")
     }
 }

@@ -28,7 +28,7 @@ struct ContentView: View {
 
                 TabView(selection: $selection) {
                     
-                    ConversationTabView(title: "대화")
+                    ConversationTabScreen(title: "대화")
                         .tabItem {
 
                             selection == 0 ? Image("conversation_active") : Image("conversation")
@@ -37,7 +37,7 @@ struct ContentView: View {
                         }
                         .tag(0)
 
-                    GameTabView(title: "게임")
+                    GameTabScreen(title: "게임")
                         .tabItem {
 
                             selection == 1 ? Image("game_active") : Image("game")
@@ -46,7 +46,7 @@ struct ContentView: View {
                         }
                         .tag(1)
 
-                    TestTabView(title: "심리테스트")
+                    TestTabScreen(title: "심리테스트")
                         .tabItem {
 
                             selection == 2 ? Image("test_active") : Image("test")

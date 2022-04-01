@@ -57,37 +57,19 @@ struct OXQuizScreen: View {
                             self.isAnswerTapped.toggle()
                         }
                     
-                    Spacer()
-                        .frame(height: 50)
+                    Spacer().frame(height: 50)
                     
-                    HStack {
-                        Button(action: {
-                            self.oxQuizVM.getOXQuizRandomly()
-                            self.isAnswerTapped = false
-                        }, label: {
-                            ZStack {
-                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                                
-                                Image(systemName: "arrow.left").resizable().frame(width: 20, height: 20)
-                                    .foregroundColor(.black)
-                            }
-                        })
-                        
-                        Spacer()
-                        
-                        Button(action: {
-                            self.oxQuizVM.getOXQuizRandomly()
-                            self.isAnswerTapped = false
-                        }, label: {
-                            ZStack {
-                                Circle().frame(width: 50, height: 50).foregroundColor(Color("SecondaryColor"))
-                                
-                                Image(systemName: "arrow.right").resizable().frame(width: 20, height: 20)
-                                    .foregroundColor(.black)
-                            }
-                        })
-                        
-                    }.padding(.horizontal, 50)
+                    Button(action: {
+                        self.oxQuizVM.getOXQuizRandomly()
+                        self.isAnswerTapped = false
+                    }, label: {
+                        ZStack {
+                            Rectangle().frame(width: 140, height: 50, alignment: .center).foregroundColor(Color("SecondaryColor"))
+                            .cornerRadius(20)
+
+                            Text("랜덤섞기").font(.system(size: 22)).fontWeight(.bold).foregroundColor(.black)
+                        }.padding(.vertical, 30)
+                    })
                     
 //                    ZStack {
 //                        Rectangle().frame(width: 140, height: 50, alignment: .center).foregroundColor(Color("SecondaryColor"))
@@ -99,6 +81,7 @@ struct OXQuizScreen: View {
                     Spacer()
                     
                 } // VStack
+                .frame(width: Constants.screenWidth)
                 
                 Button(action: {
                            presentationMode.wrappedValue.dismiss()

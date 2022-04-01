@@ -6,8 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Constants {
+    
+    static let screenWidth = UIScreen.main.bounds.size.width
+    static let screenHeight = UIScreen.main.bounds.size.height
+    
     static let IP_ADDRESS = "35.216.83.86"
     static let PORT_NUM = "8080"
+    
 }

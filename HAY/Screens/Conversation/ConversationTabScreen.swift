@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ConversationTabView: View {
+struct ConversationTabScreen: View {
     
     var title: String
     
@@ -56,11 +56,5 @@ struct ConversationTabView: View {
         .navigationTitle("")
         .navigationBarHidden(true)
         
-    }
-}
-
-struct ConversationTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConversationTabView(title: "대화")
     }
 }
