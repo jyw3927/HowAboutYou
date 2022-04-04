@@ -57,7 +57,7 @@ class HTTPClient {
         
     }
     
-    func getWithOneMouth(completion: @escaping (Result<WithOneMouth, NetworkError>) -> Void) {
+    func getWithOneMouth(completion: @escaping (Result<GameModel<WithOneMouth>, NetworkError>) -> Void) {
         
         guard let url = URL.forRandomGameByName("with-one-mouth") else {
             return completion(.failure(.badURL))
@@ -69,7 +69,7 @@ class HTTPClient {
                 return completion(.failure(.noData))
             }
             
-            guard let withOneMouth = try? JSONDecoder().decode(WithOneMouth.self, from: data) else {
+            guard let withOneMouth = try? JSONDecoder().decode(GameModel<WithOneMouth>.self, from: data) else {
                 return completion(.failure(.decodingError))
             }
             
@@ -79,7 +79,7 @@ class HTTPClient {
         
     }
     
-    func getOXQuiz(completion: @escaping (Result<OXQuiz, NetworkError>) -> Void) {
+    func getOXQuiz(completion: @escaping (Result<GameModel<OXQuiz>, NetworkError>) -> Void) {
         
         guard let url = URL.forRandomGameByName("ox-quiz") else {
             return completion(.failure(.badURL))
@@ -91,7 +91,7 @@ class HTTPClient {
                 return completion(.failure(.noData))
             }
             
-            guard let oxQuiz = try? JSONDecoder().decode(OXQuiz.self, from: data) else {
+            guard let oxQuiz = try? JSONDecoder().decode(GameModel<OXQuiz>.self, from: data) else {
                 return completion(.failure(.decodingError))
             }
             
@@ -101,7 +101,7 @@ class HTTPClient {
         
     }
     
-    func getCommonSenseQuiz(completion: @escaping (Result<CommonSenseQuiz, NetworkError>) -> Void) {
+    func getCommonSenseQuiz(completion: @escaping (Result<GameModel<CommonSenseQuiz>, NetworkError>) -> Void) {
         
         guard let url = URL.forRandomGameByName("quiz") else {
             return completion(.failure(.badURL))
@@ -113,7 +113,7 @@ class HTTPClient {
                 return completion(.failure(.noData))
             }
             
-            guard let commonsenseQuiz = try? JSONDecoder().decode(CommonSenseQuiz.self, from: data) else {
+            guard let commonsenseQuiz = try? JSONDecoder().decode(GameModel<CommonSenseQuiz>.self, from: data) else {
                 return completion(.failure(.decodingError))
             }
             
@@ -123,7 +123,7 @@ class HTTPClient {
         
     }
     
-    func getConsonantGame(completion: @escaping (Result<ConsonantGame, NetworkError>) -> Void) {
+    func getConsonantGame(completion: @escaping (Result<GameModel<ConsonantGame>, NetworkError>) -> Void) {
         
         guard let url = URL.forRandomGameByName("start-game") else {
             return completion(.failure(.badURL))
@@ -135,7 +135,7 @@ class HTTPClient {
                 return completion(.failure(.noData))
             }
             
-            guard let consonantGame = try? JSONDecoder().decode(ConsonantGame.self, from: data) else {
+            guard let consonantGame = try? JSONDecoder().decode(GameModel<ConsonantGame>.self, from: data) else {
                 return completion(.failure(.decodingError))
             }
             

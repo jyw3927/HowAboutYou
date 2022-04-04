@@ -10,10 +10,10 @@ import SwiftUI
 
 class OXQuizViewModel: ObservableObject {
     
-    @Published var oxQuiz: OXQuiz?
+    @Published var oxQuiz: GameModel<OXQuiz>?
     var httpClient = HTTPClient()
     
-    init(oxQuiz: OXQuiz? = nil) {
+    init(oxQuiz: GameModel<OXQuiz>? = nil) {
         self.oxQuiz = oxQuiz
     }
     
@@ -32,15 +32,15 @@ class OXQuizViewModel: ObservableObject {
     }
     
     var id: Int {
-        self.oxQuiz?.id ?? 0
+        self.oxQuiz?.data.id ?? 0
     }
     
     var question: String {
-        self.oxQuiz?.question ?? ""
+        self.oxQuiz?.data.question ?? ""
     }
     
     var answer: Bool {
-        self.oxQuiz?.answer ?? true
+        self.oxQuiz?.data.answer ?? true
     }
     
 }

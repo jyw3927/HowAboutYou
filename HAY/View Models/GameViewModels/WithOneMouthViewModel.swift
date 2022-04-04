@@ -10,10 +10,10 @@ import SwiftUI
 
 class WithOneMouthViewModel: ObservableObject {
     
-    @Published var withOM: WithOneMouth?
+    @Published var withOM: GameModel<WithOneMouth>?
     var httpClient = HTTPClient()
     
-    init(withOM: WithOneMouth? = nil) {
+    init(withOM: GameModel<WithOneMouth>? = nil) {
         self.withOM = withOM
     }
     
@@ -32,15 +32,15 @@ class WithOneMouthViewModel: ObservableObject {
     }
     
     var id: Int {
-        self.withOM?.id ?? 0
+        self.withOM?.data.id ?? 0
     }
     
     var firstChoice: String {
-        self.withOM?.firstChoice ?? ""
+        self.withOM?.data.firstChoice ?? ""
     }
     
     var secondChoice: String {
-        self.withOM?.secondChoice ?? ""
+        self.withOM?.data.secondChoice ?? ""
     }
     
 }

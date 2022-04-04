@@ -10,10 +10,10 @@ import SwiftUI
 
 class CommonSenseQuizViewModel: ObservableObject {
     
-    @Published var commonsense: CommonSenseQuiz?
+    @Published var commonsense: GameModel<CommonSenseQuiz>?
     var httpClient = HTTPClient()
     
-    init(commonsense: CommonSenseQuiz? = nil) {
+    init(commonsense: GameModel<CommonSenseQuiz>? = nil) {
         self.commonsense = commonsense
     }
     
@@ -32,15 +32,15 @@ class CommonSenseQuizViewModel: ObservableObject {
     }
     
     var id: Int {
-        self.commonsense?.id ?? 0
+        self.commonsense?.data.id ?? 0
     }
     
     var question: String {
-        self.commonsense?.question ?? ""
+        self.commonsense?.data.question ?? ""
     }
     
     var answer: String {
-        self.commonsense?.answer ?? ""
+        self.commonsense?.data.answer ?? ""
     }
     
 }

@@ -10,10 +10,10 @@ import SwiftUI
 
 class ConsonantGameViewModel: ObservableObject {
     
-    @Published var consonant: ConsonantGame?
+    @Published var consonant: GameModel<ConsonantGame>?
     var httpClient = HTTPClient()
     
-    init(consonant: ConsonantGame? = nil) {
+    init(consonant: GameModel<ConsonantGame>? = nil) {
         self.consonant = consonant
     }
     
@@ -32,15 +32,15 @@ class ConsonantGameViewModel: ObservableObject {
     }
     
     var id: Int {
-        self.consonant?.id ?? 0
+        self.consonant?.data.id ?? 0
     }
     
     var question: String {
-        self.consonant?.question ?? ""
+        self.consonant?.data.question ?? ""
     }
     
     var example: String {
-        self.consonant?.example ?? ""
+        self.consonant?.data.example ?? ""
     }
     
 }
