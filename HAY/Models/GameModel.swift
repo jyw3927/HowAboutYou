@@ -7,6 +7,12 @@
 
 import Foundation
 
+struct GameModel<T: Codable>: Codable {
+    let status: Int
+    let message: String
+    let data: T
+}
+
 struct BalanceGame: Codable {
     let id: Int
     let firstChoice: String

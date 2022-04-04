@@ -10,10 +10,10 @@ import SwiftUI
 
 class BalanceGameViewModel: ObservableObject {
     
-    @Published var balance: BalanceGame?
+    @Published var balance: GameModel<BalanceGame>?
     var httpClient = HTTPClient()
     
-    init(balance: BalanceGame? = nil) {
+    init(balance: GameModel<BalanceGame>? = nil) {
         self.balance = balance
     }
     
@@ -32,15 +32,15 @@ class BalanceGameViewModel: ObservableObject {
     }
     
     var id: Int {
-        self.balance?.id ?? 0
+        self.balance?.data.id ?? 0
     }
     
     var firstChoice: String {
-        self.balance?.firstChoice ?? ""
+        self.balance?.data.firstChoice ?? ""
     }
     
     var secondChoice: String {
-        self.balance?.secondChoice ?? ""
+        self.balance?.data.secondChoice ?? ""
     }
     
 }

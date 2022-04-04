@@ -35,7 +35,7 @@ class HTTPClient {
 //        }
 //    }
     
-    func getBalanceGame(completion: @escaping (Result<BalanceGame, NetworkError>) -> Void) {
+    func getBalanceGame(completion: @escaping (Result<GameModel<BalanceGame>, NetworkError>) -> Void) {
         
         guard let url = URL.forRandomGameByName("balance-game") else {
             return completion(.failure(.badURL))
@@ -47,7 +47,7 @@ class HTTPClient {
                 return completion(.failure(.noData))
             }
             
-            guard let balanceGame = try? JSONDecoder().decode(BalanceGame.self, from: data) else {
+            guard let balanceGame = try? JSONDecoder().decode(GameModel<BalanceGame>.self, from: data) else {
                 return completion(.failure(.decodingError))
             }
             
