@@ -23,6 +23,7 @@
 		52A9C02627DF41E90053893E /* OXQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02527DF41E90053893E /* OXQuizScreen.swift */; };
 		52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */; };
 		52A9C03427DF439F0053893E /* ConsonantGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */; };
+		52DD251227FABE4D004F5FC0 /* ConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD251127FABE4D004F5FC0 /* ConversationModel.swift */; };
 		52EA013627CE55A200294C48 /* ConversationTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA013527CE55A200294C48 /* ConversationTabScreen.swift */; };
 		52EA013E27CE55D100294C48 /* GameTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA013D27CE55D100294C48 /* GameTabScreen.swift */; };
 		52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014227CE55FB00294C48 /* GameTabCard.swift */; };
@@ -91,6 +92,7 @@
 		52A9C02527DF41E90053893E /* OXQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OXQuizScreen.swift; sourceTree = "<group>"; };
 		52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOneMouthScreen.swift; sourceTree = "<group>"; };
 		52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantGameScreen.swift; sourceTree = "<group>"; };
+		52DD251127FABE4D004F5FC0 /* ConversationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModel.swift; sourceTree = "<group>"; };
 		52EA013527CE55A200294C48 /* ConversationTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTabScreen.swift; sourceTree = "<group>"; };
 		52EA013D27CE55D100294C48 /* GameTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabScreen.swift; sourceTree = "<group>"; };
 		52EA014227CE55FB00294C48 /* GameTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabCard.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				52EE071E27E9B1450029A051 /* GameModel.swift */,
+				52DD251127FABE4D004F5FC0 /* ConversationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -637,6 +640,7 @@
 				522D5CF327F45E6F00A37E3A /* ConversationContentScreen.swift in Sources */,
 				52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */,
 				52131C0B27F6993E00C9CAEA /* BGColorView.swift in Sources */,
+				52DD251227FABE4D004F5FC0 /* ConversationModel.swift in Sources */,
 				52EE077C27E9D6340029A051 /* CommonSenseQuizViewModel.swift in Sources */,
 				5206909627CE48FD0057D109 /* HAYApp.swift in Sources */,
 				52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */,

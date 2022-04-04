@@ -18,6 +18,17 @@ extension URL {
         return URL(string: "http://\(Constants.IP_ADDRESS):\(Constants.PORT_NUM)/games/\(gameName)/\(id)")
     }
     
+    //CONVERSATION
+    static func forConversationByID(_ id: String) -> URL? {
+        return URL(string:
+            "http://\(Constants.IP_ADDRESS):\(Constants.PORT_NUM)/communication/\(id)")
+    }
+    //CONVERSATION
+    static func forConversationByCategory(_ category: String) -> URL? {
+        return URL(string:
+            "http://\(Constants.IP_ADDRESS):\(Constants.PORT_NUM)/communication/\(category)")
+    }
+    
     // TEST
     static func encodeURL(_ url: String) -> URL? {
         let encodedStr = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
