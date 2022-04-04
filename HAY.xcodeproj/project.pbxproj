@@ -24,6 +24,7 @@
 		52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */; };
 		52A9C03427DF439F0053893E /* ConsonantGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */; };
 		52DD251227FABE4D004F5FC0 /* ConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD251127FABE4D004F5FC0 /* ConversationModel.swift */; };
+		52DD251E27FAC16A004F5FC0 /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD251D27FAC16A004F5FC0 /* ConversationViewModel.swift */; };
 		52EA013627CE55A200294C48 /* ConversationTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA013527CE55A200294C48 /* ConversationTabScreen.swift */; };
 		52EA013E27CE55D100294C48 /* GameTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA013D27CE55D100294C48 /* GameTabScreen.swift */; };
 		52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014227CE55FB00294C48 /* GameTabCard.swift */; };
@@ -35,7 +36,6 @@
 		52EE071F27E9B1450029A051 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071E27E9B1450029A051 /* GameModel.swift */; };
 		52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE072627E9B2030029A051 /* HTTPClient.swift */; };
 		52EE072D27E9B6D30029A051 /* BalanceGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */; };
-		52EE073527E9B70F0029A051 /* ViewModelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE073427E9B70F0029A051 /* ViewModelBase.swift */; };
 		52EE077227E9D61A0029A051 /* WithOneMouthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE077127E9D61A0029A051 /* WithOneMouthViewModel.swift */; };
 		52EE077727E9D6270029A051 /* OXQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE077627E9D6270029A051 /* OXQuizViewModel.swift */; };
 		52EE077C27E9D6340029A051 /* CommonSenseQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE077B27E9D6340029A051 /* CommonSenseQuizViewModel.swift */; };
@@ -93,6 +93,7 @@
 		52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOneMouthScreen.swift; sourceTree = "<group>"; };
 		52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantGameScreen.swift; sourceTree = "<group>"; };
 		52DD251127FABE4D004F5FC0 /* ConversationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModel.swift; sourceTree = "<group>"; };
+		52DD251D27FAC16A004F5FC0 /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
 		52EA013527CE55A200294C48 /* ConversationTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTabScreen.swift; sourceTree = "<group>"; };
 		52EA013D27CE55D100294C48 /* GameTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabScreen.swift; sourceTree = "<group>"; };
 		52EA014227CE55FB00294C48 /* GameTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabCard.swift; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		52EE071E27E9B1450029A051 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		52EE072627E9B2030029A051 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceGameViewModel.swift; sourceTree = "<group>"; };
-		52EE073427E9B70F0029A051 /* ViewModelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBase.swift; sourceTree = "<group>"; };
 		52EE077127E9D61A0029A051 /* WithOneMouthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOneMouthViewModel.swift; sourceTree = "<group>"; };
 		52EE077627E9D6270029A051 /* OXQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OXQuizViewModel.swift; sourceTree = "<group>"; };
 		52EE077B27E9D6340029A051 /* CommonSenseQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSenseQuizViewModel.swift; sourceTree = "<group>"; };
@@ -229,6 +229,14 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		52DD251C27FAC159004F5FC0 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				52DD251D27FAC16A004F5FC0 /* ConversationViewModel.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
 		52EA013027CE551E00294C48 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,8 +302,8 @@
 		52EE070B27E9AD920029A051 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				52EE072B27E9B6BA0029A051 /* GameViewModels */,
-				52EE073427E9B70F0029A051 /* ViewModelBase.swift */,
+				52DD251C27FAC159004F5FC0 /* Conversation */,
+				52EE072B27E9B6BA0029A051 /* Game */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -341,7 +349,7 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		52EE072B27E9B6BA0029A051 /* GameViewModels */ = {
+		52EE072B27E9B6BA0029A051 /* Game */ = {
 			isa = PBXGroup;
 			children = (
 				52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */,
@@ -350,7 +358,7 @@
 				52EE077B27E9D6340029A051 /* CommonSenseQuizViewModel.swift */,
 				52EE078027E9D6440029A051 /* ConsonantGameViewModel.swift */,
 			);
-			path = GameViewModels;
+			path = Game;
 			sourceTree = "<group>";
 		};
 		52EE074C27E9CF700029A051 /* View */ = {
@@ -632,8 +640,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52DD251E27FAC16A004F5FC0 /* ConversationViewModel.swift in Sources */,
 				522D5CE327F36AAE00A37E3A /* ConversationTabCard.swift in Sources */,
-				52EE073527E9B70F0029A051 /* ViewModelBase.swift in Sources */,
 				52EA013E27CE55D100294C48 /* GameTabScreen.swift in Sources */,
 				52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */,
 				5286406027EB24A100284229 /* TestTabCard.swift in Sources */,
