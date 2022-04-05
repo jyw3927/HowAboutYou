@@ -23,6 +23,7 @@
 		52A9C02627DF41E90053893E /* OXQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02527DF41E90053893E /* OXQuizScreen.swift */; };
 		52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */; };
 		52A9C03427DF439F0053893E /* ConsonantGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */; };
+		52BF782827FC8F020087D59A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF782727FC8F020087D59A /* Constants.swift */; };
 		52DD251227FABE4D004F5FC0 /* ConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD251127FABE4D004F5FC0 /* ConversationModel.swift */; };
 		52DD251E27FAC16A004F5FC0 /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD251D27FAC16A004F5FC0 /* ConversationViewModel.swift */; };
 		52EA013627CE55A200294C48 /* ConversationTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA013527CE55A200294C48 /* ConversationTabScreen.swift */; };
@@ -32,7 +33,6 @@
 		52EA014D27CE563E00294C48 /* MypageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014C27CE563E00294C48 /* MypageTabView.swift */; };
 		52EA015227CE565F00294C48 /* TestTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA015127CE565F00294C48 /* TestTabScreen.swift */; };
 		52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071227E9AE000029A051 /* URL+Extensions.swift */; };
-		52EE071827E9AEFB0029A051 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071727E9AEFB0029A051 /* Constants.swift */; };
 		52EE071F27E9B1450029A051 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071E27E9B1450029A051 /* GameModel.swift */; };
 		52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE072627E9B2030029A051 /* HTTPClient.swift */; };
 		52EE072D27E9B6D30029A051 /* BalanceGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */; };
@@ -92,6 +92,7 @@
 		52A9C02527DF41E90053893E /* OXQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OXQuizScreen.swift; sourceTree = "<group>"; };
 		52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithOneMouthScreen.swift; sourceTree = "<group>"; };
 		52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantGameScreen.swift; sourceTree = "<group>"; };
+		52BF782727FC8F020087D59A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		52DD251127FABE4D004F5FC0 /* ConversationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModel.swift; sourceTree = "<group>"; };
 		52DD251D27FAC16A004F5FC0 /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
 		52EA013527CE55A200294C48 /* ConversationTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTabScreen.swift; sourceTree = "<group>"; };
@@ -101,7 +102,6 @@
 		52EA014C27CE563E00294C48 /* MypageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTabView.swift; sourceTree = "<group>"; };
 		52EA015127CE565F00294C48 /* TestTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabScreen.swift; sourceTree = "<group>"; };
 		52EE071227E9AE000029A051 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
-		52EE071727E9AEFB0029A051 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		52EE071E27E9B1450029A051 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		52EE072627E9B2030029A051 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		52EE072C27E9B6D30029A051 /* BalanceGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceGameViewModel.swift; sourceTree = "<group>"; };
@@ -166,16 +166,13 @@
 		5206909427CE48FD0057D109 /* HAY */ = {
 			isa = PBXGroup;
 			children = (
-				52EE070A27E9AD890029A051 /* Utils */,
+				52BF782627FC8EF50087D59A /* Utils */,
 				52EE070F27E9ADB50029A051 /* Extensions */,
 				52EE070C27E9AD9A0029A051 /* Services */,
 				52EE070927E9AD830029A051 /* Models */,
 				52EE070B27E9AD920029A051 /* View Models */,
 				52EE074C27E9CF700029A051 /* View */,
 				52EE071027E9ADBB0029A051 /* Screens */,
-				52EE070E27E9ADAF0029A051 /* Controls */,
-				52EE070D27E9ADA90029A051 /* Loaders */,
-				52EA013027CE551E00294C48 /* fonts */,
 				5206909527CE48FD0057D109 /* HAYApp.swift */,
 				5206909927CE49000057D109 /* Assets.xcassets */,
 				5206909E27CE49000057D109 /* Info.plist */,
@@ -229,19 +226,20 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		52BF782627FC8EF50087D59A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				52BF782727FC8F020087D59A /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		52DD251C27FAC159004F5FC0 /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
 				52DD251D27FAC16A004F5FC0 /* ConversationViewModel.swift */,
 			);
 			path = Conversation;
-			sourceTree = "<group>";
-		};
-		52EA013027CE551E00294C48 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = fonts;
 			sourceTree = "<group>";
 		};
 		52EA013127CE554000294C48 /* Test */ = {
@@ -291,14 +289,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		52EE070A27E9AD890029A051 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				52EE071727E9AEFB0029A051 /* Constants.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		52EE070B27E9AD920029A051 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,20 +304,6 @@
 				52EE072627E9B2030029A051 /* HTTPClient.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		52EE070D27E9ADA90029A051 /* Loaders */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Loaders;
-			sourceTree = "<group>";
-		};
-		52EE070E27E9ADAF0029A051 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controls;
 			sourceTree = "<group>";
 		};
 		52EE070F27E9ADB50029A051 /* Extensions */ = {
@@ -645,6 +621,7 @@
 				52EA013E27CE55D100294C48 /* GameTabScreen.swift in Sources */,
 				52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */,
 				5286406027EB24A100284229 /* TestTabCard.swift in Sources */,
+				52BF782827FC8F020087D59A /* Constants.swift in Sources */,
 				522D5CF327F45E6F00A37E3A /* ConversationContentScreen.swift in Sources */,
 				52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */,
 				52131C0B27F6993E00C9CAEA /* BGColorView.swift in Sources */,
@@ -652,7 +629,6 @@
 				52EE077C27E9D6340029A051 /* CommonSenseQuizViewModel.swift in Sources */,
 				5206909627CE48FD0057D109 /* HAYApp.swift in Sources */,
 				52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */,
-				52EE071827E9AEFB0029A051 /* Constants.swift in Sources */,
 				525BCA1A27D2054E006C151A /* ContentView.swift in Sources */,
 				52EE077227E9D61A0029A051 /* WithOneMouthViewModel.swift in Sources */,
 				52EA014827CE561900294C48 /* BalanceGameScreen.swift in Sources */,
