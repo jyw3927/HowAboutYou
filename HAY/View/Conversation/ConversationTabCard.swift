@@ -19,6 +19,7 @@ struct ConversationTabCard: View {
 
             PolygonShape(sides: 6, xPos: x, yPos: y)
                 .fill(Color("SecondaryColor"))
+                .shadow(radius: 5)
                 .zIndex(0)
 
             Text(topic)

@@ -56,8 +56,8 @@ struct ConversationTabScreen: View {
                             ConversationTabCard(topic: "미래", x: Int(geo.size.width) / 2, y: Int(geo.size.height) / 2 + 200)
                         })
                         
-                        NavigationLink(destination: ConversationContentScreen(title: "상상"), label: {
-                            ConversationTabCard(topic: "상상", x: Int(geo.size.width) - 100, y: Int(geo.size.height) - 100)
+                        NavigationLink(destination: ConversationContentScreen(title: "관계"), label: {
+                            ConversationTabCard(topic: "관계", x: Int(geo.size.width) - 100, y: Int(geo.size.height) - 100)
                         })
                                 
                     }.frame(width: 550, height: 800)
