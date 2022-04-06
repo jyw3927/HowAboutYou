@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftUIPager",
+        "repositoryURL": "https://github.com/jyw3927/SwiftUIPager.git",
+        "state": {
+          "branch": "main",
+          "revision": "2fda1d720eb026cbf87f8b3c2b447b94bdb9368b",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

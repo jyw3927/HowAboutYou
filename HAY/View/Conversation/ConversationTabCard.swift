@@ -10,25 +10,29 @@ import SwiftUI
 struct ConversationTabCard: View {
 
     var topic: String
-    var x: Int
-    var y: Int
 
     var body: some View {
 
-        ZStack {
+        VStack(spacing: 0) {
+            
+            Rectangle()
+                .frame(width: 180, height: 30)
+                .foregroundColor(Color("EnabledColor"))
+        
+            ZStack {
 
-            PolygonShape(sides: 6, xPos: x, yPos: y)
-                .fill(Color("SecondaryColor"))
-                .shadow(radius: 5)
-                .zIndex(0)
+                Rectangle()
+                    .frame(width: 200, height: 280)
+                    .foregroundColor(Color("SecondaryColor"))
+                    .cornerRadius(8)
+                
+                Text(topic)
+                    .font(.system(size: 40, weight: .bold))
+                    .foregroundColor(.black)
 
-            Text(topic)
-                .font(.system(size: 40, weight: .bold))
-                .foregroundColor(.black)
-                .position(CGPoint(x: x, y: y))
-                .zIndex(1)
-
-        }
+            } // ZStack
+            
+        } // VStack
 
     }
 }

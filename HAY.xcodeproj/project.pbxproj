@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		52A9C02627DF41E90053893E /* OXQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02527DF41E90053893E /* OXQuizScreen.swift */; };
 		52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02B27DF433D0053893E /* WithOneMouthScreen.swift */; };
 		52A9C03427DF439F0053893E /* ConsonantGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C03327DF439F0053893E /* ConsonantGameScreen.swift */; };
+		52AC84D527FDEBB9000D48DA /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 52AC84D427FDEBB9000D48DA /* SwiftUIPager */; };
 		52BF782827FC8F020087D59A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BF782727FC8F020087D59A /* Constants.swift */; };
 		52DD251227FABE4D004F5FC0 /* ConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD251127FABE4D004F5FC0 /* ConversationModel.swift */; };
 		52DD251E27FAC16A004F5FC0 /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD251D27FAC16A004F5FC0 /* ConversationViewModel.swift */; };
@@ -118,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AC84D527FDEBB9000D48DA /* SwiftUIPager in Frameworks */,
 				FE1B2152FAD00F6659C3CB5F /* Pods_HAY.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +399,9 @@
 			dependencies = (
 			);
 			name = HAY;
+			packageProductDependencies = (
+				52AC84D427FDEBB9000D48DA /* SwiftUIPager */,
+			);
 			productName = HAY;
 			productReference = 5206909227CE48FD0057D109 /* HAY.app */;
 			productType = "com.apple.product-type.application";
@@ -471,6 +476,9 @@
 				Base,
 			);
 			mainGroup = 5206908927CE48FC0057D109;
+			packageReferences = (
+				52AC84D327FDEBB9000D48DA /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+			);
 			productRefGroup = 5206909327CE48FD0057D109 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -964,6 +972,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52AC84D327FDEBB9000D48DA /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jyw3927/SwiftUIPager.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52AC84D427FDEBB9000D48DA /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52AC84D327FDEBB9000D48DA /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5206908A27CE48FC0057D109 /* Project object */;
 }
