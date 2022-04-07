@@ -11,13 +11,16 @@ struct LoginScreen: View {
     
     var body: some View {
         
-        VStack {
-            
-            Spacer().frame(height: Constants.screenHeight / 3.5)
-            
-            LoginView()
-            
-        } // VStack
+        NavigationView {
+        
+            VStack {
+                
+                Spacer().frame(height: Constants.screenHeight / 3.5)
+                
+                LoginView()
+                
+            } // VStack
+        } // NavigationView
     }
 }
 

@@ -19,6 +19,8 @@
 		522D5CF327F45E6F00A37E3A /* ConversationContentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D5CF227F45E6F00A37E3A /* ConversationContentScreen.swift */; };
 		52519A3027FE73900066E608 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52519A2F27FE73900066E608 /* LoginScreen.swift */; };
 		52519A3927FE73AC0066E608 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52519A3827FE73AC0066E608 /* LoginView.swift */; };
+		52519A4B27FE8D6D0066E608 /* RegisterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52519A4A27FE8D6D0066E608 /* RegisterButtonView.swift */; };
+		52519A5927FE8EFF0066E608 /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52519A5827FE8EFF0066E608 /* AgreementView.swift */; };
 		525BCA1A27D2054E006C151A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BCA1927D2054E006C151A /* ContentView.swift */; };
 		5286406027EB24A100284229 /* TestTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5286405F27EB24A100284229 /* TestTabCard.swift */; };
 		52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */; };
@@ -91,6 +93,8 @@
 		522D5CF227F45E6F00A37E3A /* ConversationContentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationContentScreen.swift; sourceTree = "<group>"; };
 		52519A2F27FE73900066E608 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		52519A3827FE73AC0066E608 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		52519A4A27FE8D6D0066E608 /* RegisterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButtonView.swift; sourceTree = "<group>"; };
+		52519A5827FE8EFF0066E608 /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
 		525BCA1927D2054E006C151A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5286405F27EB24A100284229 /* TestTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabCard.swift; sourceTree = "<group>"; };
 		52A9C02027DF3DF40053893E /* CommonSenseQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSenseQuizScreen.swift; sourceTree = "<group>"; };
@@ -226,6 +230,7 @@
 		52519A2D27FE736F0066E608 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				52519A4827FE8D2B0066E608 /* Register */,
 				52519A2F27FE73900066E608 /* LoginScreen.swift */,
 			);
 			path = Login;
@@ -234,9 +239,26 @@
 		52519A3727FE739D0066E608 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				52519A4927FE8D630066E608 /* Register */,
 				52519A3827FE73AC0066E608 /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		52519A4827FE8D2B0066E608 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		52519A4927FE8D630066E608 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				52519A4A27FE8D6D0066E608 /* RegisterButtonView.swift */,
+				52519A5827FE8EFF0066E608 /* AgreementView.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		5286405E27EB247400284229 /* Test */ = {
@@ -648,9 +670,11 @@
 			files = (
 				52DD251E27FAC16A004F5FC0 /* ConversationViewModel.swift in Sources */,
 				522D5CE327F36AAE00A37E3A /* ConversationTabCard.swift in Sources */,
+				52519A5927FE8EFF0066E608 /* AgreementView.swift in Sources */,
 				52EA013E27CE55D100294C48 /* GameTabScreen.swift in Sources */,
 				52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */,
 				5286406027EB24A100284229 /* TestTabCard.swift in Sources */,
+				52519A4B27FE8D6D0066E608 /* RegisterButtonView.swift in Sources */,
 				52BF782827FC8F020087D59A /* Constants.swift in Sources */,
 				522D5CF327F45E6F00A37E3A /* ConversationContentScreen.swift in Sources */,
 				52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */,
