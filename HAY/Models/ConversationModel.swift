@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct ConversationModel<T: Codable>: Codable {
+struct ConversationModel: Codable {
     let status: Int
     let message: String
-    let data: T
+    let data: [Conversation]
 }
 
-struct ConversationData: Codable {
+struct Conversation: Codable {
     let id: Int
     let category: String
     let question: String
