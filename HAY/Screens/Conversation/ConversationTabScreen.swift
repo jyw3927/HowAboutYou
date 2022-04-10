@@ -35,10 +35,7 @@ struct ConversationTabScreen: View {
                             NavigationLink(
                                 destination: ConversationContentScreen(title: item),
                                 label: {
-                                    ConversationTabCard(topic: item).onTapGesture() {
-                                        print(item)
-                                        self.conversationListVM.getList(item)
-                                    }
+                                    ConversationTabCard(topic: item)
                                 })
                             
                           })

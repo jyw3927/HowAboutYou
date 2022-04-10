@@ -26,7 +26,7 @@ extension URL {
     //CONVERSATION
     static func forConversationByCategory(_ category: String) -> URL? {
         return URL(string:
-            "http://\(Constants.IP_ADDRESS):\(Constants.PORT_NUM)/communication/\(category)")
+            "http://\(Constants.IP_ADDRESS):\(Constants.PORT_NUM)/communication/\(category)/random")
     }
     
     // TEST

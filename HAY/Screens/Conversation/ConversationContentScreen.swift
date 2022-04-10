@@ -15,7 +15,13 @@ struct ConversationContentScreen: View {
     
 //    @ObservedObject private var ConversationVM: ConsonantGameViewModel
 //
-    init() {
+    
+//    init(showMenu: Binding<Bool>) {
+//        self._showMenu = showMenu
+//        // other stuff?
+//    }
+    init(title: String) {
+        self.title = title
         self.conversationVM = ConversationViewModel()
         conversationVM.getConversationRandomly(title)
     }
