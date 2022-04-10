@@ -28,7 +28,7 @@ struct ContentView: View {
 
                 TabView(selection: $selection) {
                     
-                    ConversationTabScreen(title: "대화")
+                    ConversationTabScreen()
                         .tabItem {
 
                             selection == 0 ? Image("conversation_active") : Image("conversation")

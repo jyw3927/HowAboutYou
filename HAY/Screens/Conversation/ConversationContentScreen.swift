@@ -11,12 +11,14 @@ struct ConversationContentScreen: View {
     @Environment(\.presentationMode) var presentationMode
     var title: String
     
+    @ObservedObject private var conversationVM: ConversationViewModel
+    
 //    @ObservedObject private var ConversationVM: ConsonantGameViewModel
 //
-//    init() {
-//        self.ConversationVM = ConsonantGameViewModel()
-//        ConversationVM.getConsonantGameRandomly()
-//    }
+    init() {
+        self.conversationVM = ConversationViewModel()
+        conversationVM.getConversationRandomly(title)
+    }
 
     var body: some View {
             
@@ -43,7 +45,7 @@ struct ConversationContentScreen: View {
                             
                             Spacer().frame(height: 50)
                             
-                            Text("당신의 어릴 시절 꿈은\n      무엇이었나요?").font(.system(size: 30)).fontWeight(.bold)
+                            Text(self.conversationVM.question).font(.system(size: 30)).fontWeight(.bold)
                             
                         } // VStack
                         .padding(.trailing, 20)
@@ -54,7 +56,7 @@ struct ConversationContentScreen: View {
                     Spacer()
                     
                     Button(action: {
-//                        self.consonantGameVM.getConsonantGameRandomly()
+                        self.conversationVM.getConversationRandomly(title)
                     }, label: {
                         ZStack {
                             Rectangle().frame(width: 140, height: 50, alignment: .center).foregroundColor(Color("SecondaryColor"))
@@ -93,8 +95,8 @@ struct ConversationContentScreen: View {
     }
 }
 
-struct ConversationContentScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        ConversationContentScreen(title: "과거")
-    }
-}
+//struct ConversationContentScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ConversationContentScreen(title: "과거")
+//    }
+//}

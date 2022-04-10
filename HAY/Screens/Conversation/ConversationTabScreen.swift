@@ -10,7 +10,7 @@ import SwiftUIPager
 
 struct ConversationTabScreen: View {
     
-    var title: String
+    var title: String = "대화"
     @StateObject var page: Page = .first()
     var items = ["가족", "나", "너", "상상", "일상", "과거", "미래", "관계"]
     
@@ -35,10 +35,13 @@ struct ConversationTabScreen: View {
                             NavigationLink(
                                 destination: ConversationContentScreen(title: item),
                                 label: {
-                                    ConversationTabCard(topic: item)
+                                    ConversationTabCard(topic: item).onTapGesture() {
+                                        print(item)
+                                        self.conversationListVM.getList(item)
+                                    }
                                 })
                             
-                     })
+                          })
                     .pagingPriority(.simultaneous)
                     .itemAspectRatio(0.6)
                     .itemSpacing(0)
@@ -95,9 +98,9 @@ struct ConversationTabScreen: View {
         
     }
 }
-
-struct ConversationTabScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        ConversationTabScreen(title: "대화")
-    }
-}
+//
+//struct ConversationTabScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ConversationTabScreen(title: "대화")
+//    }
+//}

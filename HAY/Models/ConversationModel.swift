@@ -10,7 +10,7 @@ import Foundation
 struct ConversationModel: Codable {
     let status: Int
     let message: String
-    let data: [Conversation]
+    let data: Conversation
 }
 
 struct Conversation: Codable {

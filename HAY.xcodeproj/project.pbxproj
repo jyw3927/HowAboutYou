@@ -37,6 +37,7 @@
 		52EA014827CE561900294C48 /* BalanceGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014727CE561900294C48 /* BalanceGameScreen.swift */; };
 		52EA014D27CE563E00294C48 /* MypageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014C27CE563E00294C48 /* MypageTabView.swift */; };
 		52EA015227CE565F00294C48 /* TestTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA015127CE565F00294C48 /* TestTabScreen.swift */; };
+		52EC642027FFC7C70047F809 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC641F27FFC7C70047F809 /* String+Extensions.swift */; };
 		52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071227E9AE000029A051 /* URL+Extensions.swift */; };
 		52EE071F27E9B1450029A051 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071E27E9B1450029A051 /* GameModel.swift */; };
 		52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE072627E9B2030029A051 /* HTTPClient.swift */; };
@@ -110,6 +111,7 @@
 		52EA014727CE561900294C48 /* BalanceGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceGameScreen.swift; sourceTree = "<group>"; };
 		52EA014C27CE563E00294C48 /* MypageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTabView.swift; sourceTree = "<group>"; };
 		52EA015127CE565F00294C48 /* TestTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabScreen.swift; sourceTree = "<group>"; };
+		52EC641F27FFC7C70047F809 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		52EE071227E9AE000029A051 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		52EE071E27E9B1450029A051 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		52EE072627E9B2030029A051 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				52EE071227E9AE000029A051 /* URL+Extensions.swift */,
+				52EC641F27FFC7C70047F809 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -680,6 +683,7 @@
 				52EE072727E9B2030029A051 /* HTTPClient.swift in Sources */,
 				52131C0B27F6993E00C9CAEA /* BGColorView.swift in Sources */,
 				52DD251227FABE4D004F5FC0 /* ConversationModel.swift in Sources */,
+				52EC642027FFC7C70047F809 /* String+Extensions.swift in Sources */,
 				52EE077C27E9D6340029A051 /* CommonSenseQuizViewModel.swift in Sources */,
 				5206909627CE48FD0057D109 /* HAYApp.swift in Sources */,
 				52A9C02C27DF433D0053893E /* WithOneMouthScreen.swift in Sources */,
