@@ -12,7 +12,7 @@ struct ConversationTabScreen: View {
     
     var title: String = "대화"
     @StateObject var page: Page = .first()
-    var items = ["가족", "나", "너", "상상", "일상", "과거", "미래", "관계"]
+    var items = ["나", "가치", "가족", "상상", "일상", "과거", "미래", "관계"]
     
     var body: some View {
         

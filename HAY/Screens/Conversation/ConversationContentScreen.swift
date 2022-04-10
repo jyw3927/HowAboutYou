@@ -47,11 +47,11 @@ struct ConversationContentScreen: View {
                         
                         VStack {
                             
-                            Image("Attach")
+                            Image(title)
                             
-                            Spacer().frame(height: 50)
+                            Spacer().frame(height: 20)
                             
-                            Text(self.conversationVM.question).font(.system(size: 30)).fontWeight(.bold)
+                            Text(self.conversationVM.question).font(.system(size: 25)).fontWeight(.semibold).multilineTextAlignment(.center).frame(width: 240)
                             
                         } // VStack
                         .padding(.trailing, 20)
