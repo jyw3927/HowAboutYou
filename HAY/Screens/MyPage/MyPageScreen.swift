@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MypageTabView: View {
+struct MyPageScreen: View {
     
     var title: String
     
@@ -15,23 +15,39 @@ struct MypageTabView: View {
         
         ZStack {
             
-            LinearGradient(gradient: Gradient(colors: [Color("PrimaryColor"), Color("SubPrimaryColor")]),
-                            startPoint: .top, endPoint: .bottom)
-            .edgesIgnoringSafeArea(.all)
+            BGColorView()
             
             VStack {
                 
                 Text(title)
+                    .font(.system(size: 20))
                     .foregroundColor(Color("EnabledColor"))
                     .fontWeight(.bold)
                     .padding(.top, 12.0)
                 
                 Spacer()
+                    .frame(height: 60)
+                
+                UserInfoView()
+                
+                Spacer()
+                    .frame(height: 23)
+                
+                SavedTabView()
+                
+                Spacer()
+                
             } // VStack
             
         } // ZStack
         .navigationTitle("")
         .navigationBarHidden(true)
         
+    }
+}
+
+struct MyPageScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        MyPageScreen(title: "마이페이지")
     }
 }

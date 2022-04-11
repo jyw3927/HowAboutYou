@@ -35,7 +35,7 @@
 		52EA013E27CE55D100294C48 /* GameTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA013D27CE55D100294C48 /* GameTabScreen.swift */; };
 		52EA014327CE55FB00294C48 /* GameTabCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014227CE55FB00294C48 /* GameTabCard.swift */; };
 		52EA014827CE561900294C48 /* BalanceGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014727CE561900294C48 /* BalanceGameScreen.swift */; };
-		52EA014D27CE563E00294C48 /* MypageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014C27CE563E00294C48 /* MypageTabView.swift */; };
+		52EA014D27CE563E00294C48 /* MyPageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA014C27CE563E00294C48 /* MyPageScreen.swift */; };
 		52EA015227CE565F00294C48 /* TestTabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA015127CE565F00294C48 /* TestTabScreen.swift */; };
 		52EC642027FFC7C70047F809 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC641F27FFC7C70047F809 /* String+Extensions.swift */; };
 		52EE071327E9AE000029A051 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE071227E9AE000029A051 /* URL+Extensions.swift */; };
@@ -46,6 +46,8 @@
 		52EE077727E9D6270029A051 /* OXQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE077627E9D6270029A051 /* OXQuizViewModel.swift */; };
 		52EE077C27E9D6340029A051 /* CommonSenseQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE077B27E9D6340029A051 /* CommonSenseQuizViewModel.swift */; };
 		52EE078127E9D6440029A051 /* ConsonantGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE078027E9D6440029A051 /* ConsonantGameViewModel.swift */; };
+		52FFF9CA28040931002E6F9F /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFF9C928040931002E6F9F /* UserInfoView.swift */; };
+		52FFF9CF28040F3B002E6F9F /* SavedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFF9CE28040F3B002E6F9F /* SavedTabView.swift */; };
 		924C364C28344B0C161BF132 /* Pods_HAY_HAYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */; };
 		CDBE73CBAF80C390FF4FC9EA /* Pods_HAYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D973F7C021E73B7ADBD4D /* Pods_HAYTests.framework */; };
 		FE1B2152FAD00F6659C3CB5F /* Pods_HAY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356A8D1572975D8242A9B1D1 /* Pods_HAY.framework */; };
@@ -109,7 +111,7 @@
 		52EA013D27CE55D100294C48 /* GameTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabScreen.swift; sourceTree = "<group>"; };
 		52EA014227CE55FB00294C48 /* GameTabCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabCard.swift; sourceTree = "<group>"; };
 		52EA014727CE561900294C48 /* BalanceGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceGameScreen.swift; sourceTree = "<group>"; };
-		52EA014C27CE563E00294C48 /* MypageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageTabView.swift; sourceTree = "<group>"; };
+		52EA014C27CE563E00294C48 /* MyPageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScreen.swift; sourceTree = "<group>"; };
 		52EA015127CE565F00294C48 /* TestTabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabScreen.swift; sourceTree = "<group>"; };
 		52EC641F27FFC7C70047F809 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		52EE071227E9AE000029A051 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
@@ -120,6 +122,8 @@
 		52EE077627E9D6270029A051 /* OXQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OXQuizViewModel.swift; sourceTree = "<group>"; };
 		52EE077B27E9D6340029A051 /* CommonSenseQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSenseQuizViewModel.swift; sourceTree = "<group>"; };
 		52EE078027E9D6440029A051 /* ConsonantGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantGameViewModel.swift; sourceTree = "<group>"; };
+		52FFF9C928040931002E6F9F /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		52FFF9CE28040F3B002E6F9F /* SavedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTabView.swift; sourceTree = "<group>"; };
 		5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAY_HAYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD5C3BA5E8FEFF3B74B9545 /* Pods-HAY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY.release.xcconfig"; path = "Target Support Files/Pods-HAY/Pods-HAY.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -318,12 +322,12 @@
 			path = Game;
 			sourceTree = "<group>";
 		};
-		52EA013427CE556900294C48 /* Mypage */ = {
+		52EA013427CE556900294C48 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
-				52EA014C27CE563E00294C48 /* MypageTabView.swift */,
+				52EA014C27CE563E00294C48 /* MyPageScreen.swift */,
 			);
-			path = Mypage;
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		52EE070927E9AD830029A051 /* Models */ = {
@@ -366,7 +370,7 @@
 			children = (
 				52519A2D27FE736F0066E608 /* Login */,
 				52EA013327CE555400294C48 /* Game */,
-				52EA013427CE556900294C48 /* Mypage */,
+				52EA013427CE556900294C48 /* MyPage */,
 				52EA013227CE554B00294C48 /* Conversation */,
 				52EA013127CE554000294C48 /* Test */,
 			);
@@ -388,6 +392,7 @@
 		52EE074C27E9CF700029A051 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52FFF9C2280408B2002E6F9F /* MyPage */,
 				52519A3727FE739D0066E608 /* Login */,
 				522D5CE127F36A9B00A37E3A /* Conversation */,
 				52EE074D27E9CF7C0029A051 /* Game */,
@@ -403,6 +408,15 @@
 				52EA014227CE55FB00294C48 /* GameTabCard.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		52FFF9C2280408B2002E6F9F /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				52FFF9C928040931002E6F9F /* UserInfoView.swift */,
+				52FFF9CE28040F3B002E6F9F /* SavedTabView.swift */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		6948A7D0BD77373F0233F407 /* Pods */ = {
@@ -700,10 +714,12 @@
 				52EA013627CE55A200294C48 /* ConversationTabScreen.swift in Sources */,
 				52EE071F27E9B1450029A051 /* GameModel.swift in Sources */,
 				52EE077727E9D6270029A051 /* OXQuizViewModel.swift in Sources */,
+				52FFF9CA28040931002E6F9F /* UserInfoView.swift in Sources */,
+				52FFF9CF28040F3B002E6F9F /* SavedTabView.swift in Sources */,
 				52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */,
 				522D5CEB27F36CBD00A37E3A /* PolygonShape.swift in Sources */,
 				52EA015227CE565F00294C48 /* TestTabScreen.swift in Sources */,
-				52EA014D27CE563E00294C48 /* MypageTabView.swift in Sources */,
+				52EA014D27CE563E00294C48 /* MyPageScreen.swift in Sources */,
 				52519A3027FE73900066E608 /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

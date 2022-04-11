@@ -25,6 +25,7 @@ struct TestTabScreen: View {
             VStack {
                 
                 Text(title)
+                    .font(.system(size: 20))
                     .foregroundColor(Color("EnabledColor"))
                     .fontWeight(.bold)
                     .padding(.top, 12.0)
