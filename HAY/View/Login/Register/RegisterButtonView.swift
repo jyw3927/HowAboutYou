@@ -18,7 +18,8 @@ struct RegisterButtonView: View {
         
             Rectangle()
                 .frame(width: 347, height: 58)
-                .foregroundColor(isValidated ? Color("PrimaryColor") : Color("DisabledColor"))
+                .foregroundColor(isValidated ? Color("PrimaryColor") : Color("DetailColor"))
+                .cornerRadius(20)
             
             Text(label)
                 .foregroundColor(Color("EnabledColor"))

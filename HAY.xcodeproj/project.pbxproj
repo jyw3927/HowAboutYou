@@ -52,6 +52,8 @@
 		52FFF9DB280412B3002E6F9F /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FFF9DA280412B3002E6F9F /* NotoSansKR-Bold.otf */; };
 		52FFF9E0280412BF002E6F9F /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FFF9DF280412BF002E6F9F /* NotoSansKR-Medium.otf */; };
 		52FFF9E5280412C7002E6F9F /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FFF9E4280412C7002E6F9F /* NotoSansKR-Regular.otf */; };
+		52FFF9EA2804169F002E6F9F /* AgreementScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFF9E92804169F002E6F9F /* AgreementScreen.swift */; };
+		52FFF9EF28041726002E6F9F /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFF9EE28041726002E6F9F /* ProgressView.swift */; };
 		924C364C28344B0C161BF132 /* Pods_HAY_HAYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */; };
 		CDBE73CBAF80C390FF4FC9EA /* Pods_HAYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D973F7C021E73B7ADBD4D /* Pods_HAYTests.framework */; };
 		FE1B2152FAD00F6659C3CB5F /* Pods_HAY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356A8D1572975D8242A9B1D1 /* Pods_HAY.framework */; };
@@ -132,6 +134,8 @@
 		52FFF9DA280412B3002E6F9F /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		52FFF9DF280412BF002E6F9F /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		52FFF9E4280412C7002E6F9F /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		52FFF9E92804169F002E6F9F /* AgreementScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementScreen.swift; sourceTree = "<group>"; };
+		52FFF9EE28041726002E6F9F /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAY_HAYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD5C3BA5E8FEFF3B74B9545 /* Pods-HAY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY.release.xcconfig"; path = "Target Support Files/Pods-HAY/Pods-HAY.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,6 +267,7 @@
 		52519A4827FE8D2B0066E608 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				52FFF9E92804169F002E6F9F /* AgreementScreen.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			children = (
 				52519A4A27FE8D6D0066E608 /* RegisterButtonView.swift */,
 				52519A5827FE8EFF0066E608 /* AgreementView.swift */,
+				52FFF9EE28041726002E6F9F /* ProgressView.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -740,11 +746,13 @@
 				52FFF9CA28040931002E6F9F /* UserInfoView.swift in Sources */,
 				52FFF9CF28040F3B002E6F9F /* SavedTabView.swift in Sources */,
 				52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */,
+				52FFF9EA2804169F002E6F9F /* AgreementScreen.swift in Sources */,
 				52FFF9D4280410FA002E6F9F /* Font+Extensions.swift in Sources */,
 				522D5CEB27F36CBD00A37E3A /* PolygonShape.swift in Sources */,
 				52EA015227CE565F00294C48 /* TestTabScreen.swift in Sources */,
 				52EA014D27CE563E00294C48 /* MyPageScreen.swift in Sources */,
 				52519A3027FE73900066E608 /* LoginScreen.swift in Sources */,
+				52FFF9EF28041726002E6F9F /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
