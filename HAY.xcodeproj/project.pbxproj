@@ -48,6 +48,10 @@
 		52EE078127E9D6440029A051 /* ConsonantGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE078027E9D6440029A051 /* ConsonantGameViewModel.swift */; };
 		52FFF9CA28040931002E6F9F /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFF9C928040931002E6F9F /* UserInfoView.swift */; };
 		52FFF9CF28040F3B002E6F9F /* SavedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFF9CE28040F3B002E6F9F /* SavedTabView.swift */; };
+		52FFF9D4280410FA002E6F9F /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFF9D3280410FA002E6F9F /* Font+Extensions.swift */; };
+		52FFF9DB280412B3002E6F9F /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FFF9DA280412B3002E6F9F /* NotoSansKR-Bold.otf */; };
+		52FFF9E0280412BF002E6F9F /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FFF9DF280412BF002E6F9F /* NotoSansKR-Medium.otf */; };
+		52FFF9E5280412C7002E6F9F /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52FFF9E4280412C7002E6F9F /* NotoSansKR-Regular.otf */; };
 		924C364C28344B0C161BF132 /* Pods_HAY_HAYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */; };
 		CDBE73CBAF80C390FF4FC9EA /* Pods_HAYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D973F7C021E73B7ADBD4D /* Pods_HAYTests.framework */; };
 		FE1B2152FAD00F6659C3CB5F /* Pods_HAY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356A8D1572975D8242A9B1D1 /* Pods_HAY.framework */; };
@@ -124,6 +128,10 @@
 		52EE078027E9D6440029A051 /* ConsonantGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantGameViewModel.swift; sourceTree = "<group>"; };
 		52FFF9C928040931002E6F9F /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		52FFF9CE28040F3B002E6F9F /* SavedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTabView.swift; sourceTree = "<group>"; };
+		52FFF9D3280410FA002E6F9F /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		52FFF9DA280412B3002E6F9F /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		52FFF9DF280412BF002E6F9F /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		52FFF9E4280412C7002E6F9F /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		5A96740B0ADA1F14018DA653 /* Pods_HAY_HAYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAY_HAYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD5C3BA5E8FEFF3B74B9545 /* Pods-HAY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAY.release.xcconfig"; path = "Target Support Files/Pods-HAY/Pods-HAY.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +190,7 @@
 		5206909427CE48FD0057D109 /* HAY */ = {
 			isa = PBXGroup;
 			children = (
+				52FFF9D92804128F002E6F9F /* Fonts */,
 				52BF782627FC8EF50087D59A /* Utils */,
 				52EE070F27E9ADB50029A051 /* Extensions */,
 				52EE070C27E9AD9A0029A051 /* Services */,
@@ -361,6 +370,7 @@
 			children = (
 				52EE071227E9AE000029A051 /* URL+Extensions.swift */,
 				52EC641F27FFC7C70047F809 /* String+Extensions.swift */,
+				52FFF9D3280410FA002E6F9F /* Font+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -417,6 +427,16 @@
 				52FFF9CE28040F3B002E6F9F /* SavedTabView.swift */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		52FFF9D92804128F002E6F9F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				52FFF9E4280412C7002E6F9F /* NotoSansKR-Regular.otf */,
+				52FFF9DF280412BF002E6F9F /* NotoSansKR-Medium.otf */,
+				52FFF9DA280412B3002E6F9F /* NotoSansKR-Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		6948A7D0BD77373F0233F407 /* Pods */ = {
@@ -556,8 +576,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FFF9E0280412BF002E6F9F /* NotoSansKR-Medium.otf in Resources */,
 				5206909D27CE49000057D109 /* Preview Assets.xcassets in Resources */,
+				52FFF9DB280412B3002E6F9F /* NotoSansKR-Bold.otf in Resources */,
 				5206909A27CE49000057D109 /* Assets.xcassets in Resources */,
+				52FFF9E5280412C7002E6F9F /* NotoSansKR-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +740,7 @@
 				52FFF9CA28040931002E6F9F /* UserInfoView.swift in Sources */,
 				52FFF9CF28040F3B002E6F9F /* SavedTabView.swift in Sources */,
 				52A9C02127DF3DF40053893E /* CommonSenseQuizScreen.swift in Sources */,
+				52FFF9D4280410FA002E6F9F /* Font+Extensions.swift in Sources */,
 				522D5CEB27F36CBD00A37E3A /* PolygonShape.swift in Sources */,
 				52EA015227CE565F00294C48 /* TestTabScreen.swift in Sources */,
 				52EA014D27CE563E00294C48 /* MyPageScreen.swift in Sources */,
