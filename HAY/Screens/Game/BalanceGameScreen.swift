@@ -89,7 +89,9 @@ struct BalanceGameScreen: View {
                             Rectangle().frame(width: 140, height: 50, alignment: .center).foregroundColor(Color("SecondaryColor"))
                             .cornerRadius(20)
 
-                            Text("랜덤섞기").font(.system(size: 22)).fontWeight(.bold).foregroundColor(.black)
+                            Image("random")
+                                .resizable()
+                                .frame(width: 45, height: 30)
                         }.padding(.vertical, 30)
                     })
                     
