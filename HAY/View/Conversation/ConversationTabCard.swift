@@ -31,6 +31,7 @@ struct ConversationTabCard: View {
                     .foregroundColor(.black)
 
             } // ZStack
+            .shadow(radius: 10)
             
         } // VStack
 
