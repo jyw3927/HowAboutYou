@@ -41,6 +41,8 @@ struct CommonSenseQuizScreen: View {
                         .foregroundColor(Color("EnabledColor"))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
+                        .frame(width: 300, height: 80)
+                        .minimumScaleFactor(0.7)
                     
                     Spacer()
                     
