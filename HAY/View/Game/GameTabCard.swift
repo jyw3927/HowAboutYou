@@ -30,7 +30,6 @@ struct GameTabCard: View {
             }
             
         }
-        .background(Color.accentColor)
         .cornerRadius(15)
         
     }

@@ -41,38 +41,37 @@ struct ConversationContentScreen: View {
                     
                     Spacer()
                     
-                    ZStack {
-                        
-                        Image("ConversationImageBackground")
-                        
-                        VStack {
-                            
-                            Image(title)
-                            
-                            Spacer().frame(height: 20)
-                            
-                            Text(self.conversationVM.question).font(.system(size: 25)).fontWeight(.semibold).multilineTextAlignment(.center).frame(width: 240)
-                            
-                        } // VStack
-                        .padding(.trailing, 20)
-                        
-                    } // ZStack
-                    .padding(.leading, 20)
-                    
-                    Spacer()
-                    
                     Button(action: {
                         self.conversationVM.getConversationRandomly(title)
                     }, label: {
+                    
                         ZStack {
-                            Rectangle().frame(width: 140, height: 50, alignment: .center).foregroundColor(Color("SecondaryColor"))
-                            .cornerRadius(20)
-
-                            Image("random")
-                                .resizable()
-                                .frame(width: 45, height: 30)
-                        }.padding(.vertical, 30)
+                            
+                            Image("ConversationImageBackground")
+                            
+                            VStack {
+                                
+                                Image(title)
+                                
+                                Spacer().frame(height: 20)
+                                
+                                Text(self.conversationVM.question)
+                                    .font(.system(size: 25))
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.black)
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 240, height: 80)
+                                    .minimumScaleFactor(0.7)
+                                
+                            } // VStack
+                            .padding(.trailing, 35)
+                            
+                        } // ZStack
+                        .padding(.leading, 20)
                     })
+                    
+                    Spacer()
+                    
                     
 //                    ZStack {
 //                        Rectangle().frame(width: 140, height: 50, alignment: .center).foregroundColor(Color("SecondaryColor"))
@@ -80,8 +79,8 @@ struct ConversationContentScreen: View {
 //
 //                        Text("저장하기").font(.system(size: 22)).fontWeight(.bold)
 //                    }.padding(.vertical, 30)
-                    
-                    Spacer()
+
+//                    Spacer()
                     
                 } // VStack
                 .frame(width: Constants.screenWidth)
