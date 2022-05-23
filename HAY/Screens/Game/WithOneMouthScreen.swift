@@ -46,7 +46,8 @@ struct WithOneMouthScreen: View {
                         Text(self.withOneMouthVM.firstChoice)
                             .font(.system(size: 30))
                             .fontWeight(.bold)
-                            .frame(width: 300, height: 200, alignment: .center)
+                            .frame(width: 250, height: 200)
+                            .multilineTextAlignment(.center)
                             .minimumScaleFactor(0.5)
                             
                     }.onTapGesture {
@@ -67,7 +68,8 @@ struct WithOneMouthScreen: View {
                         Text(self.withOneMouthVM.secondChoice)
                             .font(.system(size: 30))
                             .fontWeight(.bold)
-                            .frame(width: 300, height: 200, alignment: .center)
+                            .frame(width: 250, height: 200)
+                            .multilineTextAlignment(.center)
                             .minimumScaleFactor(0.5)
                     }.padding(.bottom, 30.0)
                     .onTapGesture {

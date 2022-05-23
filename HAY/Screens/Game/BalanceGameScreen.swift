@@ -47,7 +47,8 @@ struct BalanceGameScreen: View {
                         Text(self.balanceGameVM.firstChoice)
                             .font(.system(size: 30))
                             .fontWeight(.bold)
-                            .frame(width: 300, height: 200, alignment: .center)
+                            .frame(width: 250, height: 200)
+                            .multilineTextAlignment(.center)
                             .minimumScaleFactor(0.5)
                             
                     }.onTapGesture {
@@ -68,7 +69,8 @@ struct BalanceGameScreen: View {
                         Text(self.balanceGameVM.secondChoice)
                             .font(.system(size: 30))
                             .fontWeight(.bold)
-                            .frame(width: 300, height: 200, alignment: .center)
+                            .frame(width: 250, height: 200)
+                            .multilineTextAlignment(.center)
                             .minimumScaleFactor(0.5)
                     }
                     .padding(.bottom, 30.0)
