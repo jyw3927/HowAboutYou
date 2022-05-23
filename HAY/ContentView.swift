@@ -71,7 +71,7 @@ struct ContentView: View {
                 .navigationTitle("")
                 .navigationBarHidden(true)
 
-            }.zIndex(0) // NavigationView
+            }.accentColor(Color(.black)).zIndex(0) // NavigationView
             
             if isLoading {
                 launchScreenView.transition(.opacity).zIndex(1)

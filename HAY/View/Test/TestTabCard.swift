@@ -30,7 +30,6 @@ struct TestTabCard: View {
             }
             
         }
-        .background(Color.accentColor)
         .cornerRadius(15)
         
     }
