@@ -4,7 +4,9 @@
 #### Project Goal: 관계 형성 도움 서비스
 #### Stack: Swift (UIKit & SwiftUI)
 
-## Main Task
+## Main Task (UIKit)
+
+## Main Task (SwiftUI)
 - MVVM Design Pattern
 - HTTP Request: URLSession
 - Open Source Package(Pager) Customizing
