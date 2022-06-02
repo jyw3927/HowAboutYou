@@ -12,4 +12,4 @@
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/64010987/170946397-350db20f-7de4-4b0b-b4f2-f72f1f3cbbfe.png)
 
-### TestFlight Available
+> TestFlight Available
