@@ -6,7 +6,8 @@
 #### Stack: Swift (UIKit & SwiftUI)
 
 ## Main Task
-- MVVM Design Pattern
+- MVC Design Pattern (UIKit)
+- MVVM Design Pattern (SwiftUI)
 - HTTP Request: URLSession
 - Open Source Package(Pager) Customizing
 
