@@ -3,7 +3,7 @@
 
 ## Project Description
 #### Project Goal: 관계 형성 도움 서비스
-#### Stack: Swift (UIKit & SwiftUI)
+#### Stack: Swift (SwiftUI)
 
 ## Main Task
 - MVC Design Pattern (UIKit)
